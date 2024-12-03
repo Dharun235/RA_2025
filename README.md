@@ -1,6 +1,6 @@
-Name: Dharunkumar Senthilkumar
-Position: Amaneus within Research
-Contract: 02/12/2024 to 01/09/2025
+**Name:** Dharunkumar Senthilkumar  
+**Position:** Amaneus within Research  
+**Contract:** 02/12/2024 to 01/09/2025
 
 Important links
 - [Track of hours worked](https://docs.google.com/spreadsheets/d/1C0Kd1SOetn8jI25BcTjdE50et2n8ZGj_UXqiCZhcxL4/edit?gid=0#gid=0)
