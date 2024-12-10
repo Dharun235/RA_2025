@@ -58,3 +58,11 @@
 - Confirmed that no additional virtual environments are needed for PepperChat as it works without issues in the default environment setup.  
 
 --- 
+
+## **10/12/2024**  
+- Worked from 9:00 AM to 12:00 PM.  
+- Pepper showed different IP addresses starting with 10 but later after 30-40 minutes showed the correct IP address and got connected to the PC
+- Access to chatGPT requires payment so couldn't do the pepperchat implementation  
+- Next day try for displaying the text on the tablet and test the teleoperation, chatGPT integration and various applications listed in Pepper Applications
+  
+--- 
