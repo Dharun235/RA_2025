@@ -66,3 +66,11 @@
 - Next day try for displaying the text on the tablet and test the teleoperation, chatGPT integration and various applications listed in Pepper Applications
   
 --- 
+
+## **13/12/2024**  
+- Worked from 9:00 AM to 12:00 PM.  
+- Pepper showed different IP address and as it connects to some IP address starting with 10, I suspect it is connecting to NOMAD or any other chalmers wifi
+- Registered a case with Aldebran regarding this issue - https://corporate-internal-prod.aldebaran.com/en/support/case
+- Thinking about factory reset the robot - https://support.unitedrobotics.group/en/support/solutions/articles/80000962214-pepper-how-to-factory-reset-the-tablet-only
+  
+--- 
