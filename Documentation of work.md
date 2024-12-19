@@ -74,3 +74,9 @@
 - Thinking about factory reset the robot - https://support.unitedrobotics.group/en/support/solutions/articles/80000962214-pepper-how-to-factory-reset-the-tablet-only
   
 --- 
+
+## **19/12/2024**  
+- Worked from 9:00 AM to 17:00 PM.  
+- Pepper robot - AP990396A14Y9A200044 and Got reply from aldebran to mail to United robotics group - https://support.unitedrobotics.group/en/support/solutions/80000327218
+- Mailed to IT support for finding out the wifi corresponding to the IP address - 10.132.0.186
+--- 
