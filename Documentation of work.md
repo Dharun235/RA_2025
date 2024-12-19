@@ -79,4 +79,6 @@
 - Worked from 9:00 AM to 17:00 PM.  
 - Pepper robot - AP990396A14Y9A200044 and version 1.8 and the same for tablet and Got reply from aldebran to mail to United robotics group - https://support.unitedrobotics.group/en/support/solutions/80000327218
 - Mailed to IT support for finding out the wifi corresponding to the IP address - 10.132.0.186
+- Connected the ethernet cable to the head and then robot connected to the IP address - 192.168.0.101 and the wifi as suspected is connected to NOMAD and now changed
+- Tablet is turned on, connected to wifi and the settings tab is open by following this - https://github.com/arlemi/setup-wifi-pepper. So head and tablet to be checked whether they are on same wifi.
 --- 
