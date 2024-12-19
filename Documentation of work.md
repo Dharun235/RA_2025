@@ -81,4 +81,6 @@
 - Mailed to IT support for finding out the wifi corresponding to the IP address - 10.132.0.186
 - Connected the ethernet cable to the head and then robot connected to the IP address - 192.168.0.101 and the wifi as suspected is connected to NOMAD and now changed
 - Tablet is turned on, connected to wifi and the settings tab is open by following this - https://github.com/arlemi/setup-wifi-pepper. So head and tablet to be checked whether they are on same wifi.
+- Connect to tablet using ssh and you can make it do various tasks like displaying text, photo or website on tablet.
+- Trying to do the teleoperation using the ubuntu 20.04 in virtual box
 --- 
