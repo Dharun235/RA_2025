@@ -84,3 +84,16 @@
 - Connect to tablet using ssh and you can make it do various tasks like displaying text, photo or website on tablet.
 - Trying to do the teleoperation using the ubuntu 20.04 in virtual box
 --- 
+
+## **20/12/2024**  
+- Worked from 9:00 AM to 16:00 PM.
+- Using virtual box for ubuntu environments
+- pynput cannot be installed on many platforms like ubuntu 20, 16, and windows 11 too so tried with keyboard library but problem persisted.
+- evdev package was installed with command pip install evdev or with pip install evdev==<version> and it works randomly for different environments
+- pepper tablet is fine and works perfectly
+- Android app creation requires qiSDK which is compatible only for some platforms like ubuntu 16.04 or windows 10
+- Eduroam is not connecting properly with pepper tablet so have to stick with robotkuggen or robotkuggen5G
+- Tried with these tutorials for teleoperations but didn't work out well - https://github.com/nevalsar/pepper-teleop/tree/main and https://github.com/lucregrassi/robot-teleoperation-interface so had to look for other ways of using them, which requires python sdk to be downloaded, which again depends on which enviroment you use and what sdk you are trying to use as there are few types like naoqi, qiSDK and also choregraphe can be used where there is python block inside programming in box libraries which you can use to program the robot.
+
+--- 
+
