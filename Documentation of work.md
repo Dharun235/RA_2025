@@ -104,6 +104,8 @@
 - Downloaded the NAOQI older version in the ubuntu 14 and successfully ran some simpler scripts like pepper robot saying "hello I am pepper" in python through python sdk using command terminal in ssh.
 - Tried to install the requirements of tic tac toe game https://github.com/maverickjoy/pepper-tic-tac-toe?tab=readme-ov-file but couldnt install properly and the reason was not found.
 - Tasks for next week - app for "yes or no", recognize a line through camera and stop moving, game like implementation in pepper for exhibitions.
+- Use ./filename.run for executing the setup file and also be in root to install and change the permissions.
+- Executed some programs in the pepper applications example - https://github.com/Vicken-Ghoubiguian/pepperApplications but the tablet didn't work properly as intended.
 
 --- 
 
