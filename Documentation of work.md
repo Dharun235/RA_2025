@@ -97,3 +97,13 @@
 
 --- 
 
+## **30/1/2025**  
+- Worked from 9:00 AM to 17:00 PM.
+- The website - https://www.aldebaran.com/fr/support/nao-6/downloads-softwares is not present.
+- The scp command didn't work out well as the location of html file or any other file in pc to be moved to tablet was not able to be discovered. So, I had to use gmail to send and download. But even then, through the command terminal in ssh, I was not able to find the downloads folder.
+- Downloaded the NAOQI older version in the ubuntu 14 and successfully ran some simpler scripts like pepper robot saying "hello I am pepper" in python through python sdk using command terminal in ssh.
+- Tried to install the requirements of tic tac toe game https://github.com/maverickjoy/pepper-tic-tac-toe?tab=readme-ov-file but couldnt install properly and the reason was not found.
+- Tasks for next week - app for "yes or no", recognize a line through camera and stop moving, game like implementation in pepper for exhibitions.
+
+--- 
+
