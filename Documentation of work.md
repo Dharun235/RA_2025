@@ -108,4 +108,11 @@
 - Executed some programs in the pepper applications example - https://github.com/Vicken-Ghoubiguian/pepperApplications but the tablet didn't work properly as intended.
 
 --- 
+## **6/2/2025**  
+- Worked from 9:00 AM to 17:00 PM.
+- Clicking the tablet search app will take you to the initial stage of tablet. So, you need to power off.
+- Tried to send using bluetooth, scp, mail, usb and everything worked except scp, but couldnt find the file's location. 
+- Used flask based web app for "ARE you happy" and ran from pc and not in pepper, just entering the IP address is enough to see in browser. Same concept is to be used for user studies setup preparation.  
+- Tried to install cv2, numpy, pillow but it doesn't get installed using pip and also the website is not available for download for pip2.7. Need to figure this out. Currently, black line detection program using pillow, numpy is done.
+--- 
 
