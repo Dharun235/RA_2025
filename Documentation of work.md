@@ -116,3 +116,9 @@
 - Tried to install cv2, numpy, pillow but it doesn't get installed using pip and also the website is not available for download for pip2.7. Need to figure this out. Currently, black line detection program using pillow, numpy is done.
 --- 
 
+## **11/2/2025**  
+- Worked from 12 to 17:00.
+- Issue of installing cv2, numpy or any other is solved by using sudo apt python-<package>.
+- "ARE YOU HAPPY" is enhanced.  
+- 
+--- 
