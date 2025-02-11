@@ -120,5 +120,6 @@
 - Worked from 12 to 17:00.
 - Issue of installing cv2, numpy or any other is solved by using sudo apt python-<package>.
 - "ARE YOU HAPPY" is enhanced.  
-- 
+- Object detection is available, but line detection is not. Custom code is not working for some reason, which uses numpy, cv2. Cannot install gstreamer or any new package in python.
+- Next is to work on line detect code
 --- 
