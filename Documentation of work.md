@@ -123,3 +123,20 @@
 - Object detection is available, but line detection is not. Custom code is not working for some reason, which uses numpy, cv2. Cannot install gstreamer or any new package in python.
 - Next is to work on line detect code
 --- 
+
+## **13/2/2025**  
+- Worked from 9 to 17:00.
+- Line detection removed.
+- Figured out all control to be done from windows using cmd by connecting to pepper using ssh nao@IP, storing the files in pepper robot, thus directly using its packages and no installation required.
+- No android app development and control only using python libraries and display using web interface in tablet.
+- Antonia script for user studies is used.
+- The only problem with pepper is not knowing how to use its camera properly for own purposes like line detection, even though libraries are available in pepper, we dont know how to connect to camera.
+- ChatGPT interface is on the plan. 
+--- 
+
+## **18/2/2025**  
+- Worked from 13 to 17:00.
+- Read about misty robot and couldnt download app because of which no IP address -> No program development.
+- Misty robot documentation - https://docs.mistyrobotics.com/.
+- From Thursday, pilot studies to be conducted for Antonia's user studies.
+--- 
