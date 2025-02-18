@@ -6,6 +6,7 @@
 
 **Important links**
 - [Track of hours worked](https://docs.google.com/spreadsheets/d/1C0Kd1SOetn8jI25BcTjdE50et2n8ZGj_UXqiCZhcxL4/edit?gid=0#gid=0)
+- [Pepper robot booking](https://docs.google.com/spreadsheets/d/1N_mJlI-YBO1-8UJsnpvt48a4VzqEP6bdJLyYPYXrZVU/edit)
 - [Tasks](https://docs.google.com/spreadsheets/d/1iAmgyB54EfzorfaWhEhtZNnE2RbHTxVGqv-ixY5Jg40/edit?usp=sharing)
 - [Pepper Documentation](http://doc.aldebaran.com/2-4/home_pepper.html)
 - [Choregraphe download](https://www.aldebaran.com/en/support/nao-6/downloads-softwares)
