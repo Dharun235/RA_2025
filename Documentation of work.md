@@ -131,7 +131,9 @@
 - No android app development and control only using python libraries and display using web interface in tablet.
 - Antonia script for user studies is used.
 - The only problem with pepper is not knowing how to use its camera properly for own purposes like line detection, even though libraries are available in pepper, we dont know how to connect to camera.
-- ChatGPT interface is on the plan. 
+- ChatGPT interface is on the plan.
+- Teleoperation script to move and rotate the robot is done in python and can be controlled with wasd keys.
+- Are you happy script is updated.
 --- 
 
 ## **18/2/2025**  
