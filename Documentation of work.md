@@ -142,3 +142,12 @@
 - Misty robot documentation - https://docs.mistyrobotics.com/.
 - From Thursday, pilot studies to be conducted for Antonia's user studies.
 --- 
+
+## **20/2/2025**  
+- Worked from 9 to 17:00.
+- No pilot studies
+- Coding is completed for user studies.
+- Display of webpage or image is yet to be done.
+- This documentation of code for pepper robot is found - http://doc.aldebaran.com/2-5/naoqi/core/altabletservice.html
+- Next week Thursday pilot studies to be done for 2 people.
+--- 
