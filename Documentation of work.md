@@ -151,3 +151,10 @@
 - This documentation of code for pepper robot is found - http://doc.aldebaran.com/2-5/naoqi/core/altabletservice.html
 - Next week Thursday pilot studies to be done for 2 people.
 --- 
+
+## **20/2/2025**  
+- Worked from 10 to 17:00.
+- No pilot studies
+- Coding is completed for sonar movement with const vel and front sonar.
+- Choregraph cannot be used for retrieving values from sonar. Webot, pybullet can be used with ROS or TCP along with choregraph for simulation.
+--- 
