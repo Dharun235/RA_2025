@@ -131,7 +131,9 @@
 - No android app development and control only using python libraries and display using web interface in tablet.
 - Antonia script for user studies is used.
 - The only problem with pepper is not knowing how to use its camera properly for own purposes like line detection, even though libraries are available in pepper, we dont know how to connect to camera.
-- ChatGPT interface is on the plan. 
+- ChatGPT interface is on the plan.
+- Teleoperation script to move and rotate the robot is done in python and can be controlled with wasd keys.
+- Are you happy script is updated.
 --- 
 
 ## **18/2/2025**  
@@ -139,4 +141,20 @@
 - Read about misty robot and couldnt download app because of which no IP address -> No program development.
 - Misty robot documentation - https://docs.mistyrobotics.com/.
 - From Thursday, pilot studies to be conducted for Antonia's user studies.
+--- 
+
+## **20/2/2025**  
+- Worked from 9 to 17:00.
+- No pilot studies
+- Coding is completed for user studies.
+- Display of webpage or image is yet to be done.
+- This documentation of code for pepper robot is found - http://doc.aldebaran.com/2-5/naoqi/core/altabletservice.html
+- Next week Thursday pilot studies to be done for 2 people.
+--- 
+
+## **20/2/2025**  
+- Worked from 10 to 17:00.
+- No pilot studies
+- Coding is completed for sonar movement with const vel and front sonar.
+- Choregraph cannot be used for retrieving values from sonar. Webot, pybullet can be used with ROS or TCP along with choregraph for simulation.
 --- 
