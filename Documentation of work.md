@@ -158,3 +158,9 @@
 - Coding is completed for sonar movement with const vel and front sonar.
 - Choregraph cannot be used for retrieving values from sonar. Webot, pybullet can be used with ROS or TCP along with choregraph for simulation.
 --- 
+
+## **27/2/2025**  
+- Worked from 9 to 17:00.
+- 2 pilot studies
+- Studied about LLMs for pepper robot implementation
+--- 
