@@ -164,3 +164,21 @@
 - 2 pilot studies
 - Studied about LLMs for pepper robot implementation
 --- 
+
+## **4/3/2025**  
+- Worked from 9 to 17:00.
+- 1 pilot studies, took notes of meeting following the questions:
+  Record physical and verbal reactions
+1.Smiling vs. neutral vs. discomfort (frowning, backing away).
+2.Do they look at Pepper naturally, or avoid eye contact?
+3. Do users acknowledge the explanation?
+4. Do they react positively or negatively to the explanation?
+5.Do users seem confused or uncomfortable when Pepper moves without explanation?
+6. Do they verbalize concerns (e.g., "I didn’t expect that" or "Why did it do that?")?
+Note engagement level
+1. Are users more focused or distracted when Pepper is close?
+2.Do users spend more time hesitating when Pepper is near?
+3. Do users seem engaged or hesitant?
+4. Do they look at Pepper naturally, or avoid eye contact?
+- Studied about LLMs for pepper robot implementation and used Dialogpt for conversations. Recording the audio is possible in pepper but converting to text from wav isn't. So, have to find a way to programmatically transfer the files and then convert to text, then give to gpt for processing, then transfer the text to pepper, then use tts to speak.
+--- 
