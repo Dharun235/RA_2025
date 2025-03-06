@@ -182,3 +182,13 @@ Note engagement level
 4. Do they look at Pepper naturally, or avoid eye contact?
 - Studied about LLMs for pepper robot implementation and used Dialogpt for conversations. Recording the audio is possible in pepper but converting to text from wav isn't. So, have to find a way to programmatically transfer the files and then convert to text, then give to gpt for processing, then transfer the text to pepper, then use tts to speak.
 --- 
+
+## **6/3/2025**  
+- Worked from 9 to 17:00.
+- 0 pilot studies
+- Excel sheet for experiment timings created
+- Pepper chatgpt integration was much more difficult as pepper robot dont support or my pc doesnt allow to connect to pepper through HTTP, socket, TCP, FTP for to and forth transfer of audio files and text for STT, gpt reasoning and TTS.
+- Tried to use the direct path of python2 in my pc instead of variables which worked.
+- Created the portfolio and successfully displayed many correct information but there are some problems with display of special characters.
+- Try to store the file in pc through HTTP after recording using pepper's audio channel. Code- audio_recorder.startMicrophonesRecording(audio_file, "wav", 16000, [0, 0, 1, 0])  and audio_recorder.stopMicrophonesRecording()
+--- 
