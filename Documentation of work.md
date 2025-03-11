@@ -192,3 +192,11 @@ Note engagement level
 - Created the portfolio and successfully displayed many correct information but there are some problems with display of special characters.
 - Try to store the file in pc through HTTP after recording using pepper's audio channel. Code- audio_recorder.startMicrophonesRecording(audio_file, "wav", 16000, [0, 0, 1, 0])  and audio_recorder.stopMicrophonesRecording()
 --- 
+
+## **11/3/2025**  
+- Worked from 9 to 17:00.
+- 2 user studies
+- Google sheets for experiment notes created
+- Corrected the filtering of paper type in website
+- Used audio from microphone of pc instead of pepper as it is not possible to stream the audio from pepper's microphone to pc for processing, and used Dialogpt for conversation.
+--- 
