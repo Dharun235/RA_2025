@@ -200,3 +200,9 @@ Note engagement level
 - Corrected the filtering of paper type in website
 - Used audio from microphone of pc instead of pepper as it is not possible to stream the audio from pepper's microphone to pc for processing, and used Dialogpt for conversation.
 --- 
+
+## **13/3/2025**  
+- Worked from 9 to 17:00.
+- 2 user studies
+- Tested all the example codes provided before for exhibition. ALTabletService is not working properly, other than that everything works fine.
+--- 
