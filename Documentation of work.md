@@ -206,3 +206,11 @@ Note engagement level
 - 2 user studies
 - Tested all the example codes provided before for exhibition. ALTabletService is not working properly, other than that everything works fine.
 --- 
+
+## **18/3/2025**  
+- Worked from 9 to 17:00.
+- 3 user studies
+- Tested all the example codes provided before for exhibition. ALTabletService is not working properly, other than that everything works fine.
+- Website is improved.
+--- 
+
