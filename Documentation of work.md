@@ -214,3 +214,12 @@ Note engagement level
 - Website is improved.
 --- 
 
+## **21/3/2025**  
+- Worked from 9 to 17:00.
+- 2 user studies
+- Tested all the example codes provided before for exhibition through choregraphe. ALTabletService is not working properly, other than that everything works fine.
+- Website is improved.
+- Problems to solve: [Factory reset](https://support.old.unitedrobotics.group/en/support/solutions/articles/80001010870-factory-reset-pepper-2-5-) and update the robot after Antonia's experiment to solve AlTabletService, all the projects that doesn't have component of tablet is working through choregraphe in ubuntu 14, chatgpt requires api key, teleoperation script done, tablet service is present but is curopted so need to do factory reset and update which requires email and password and can be doen after Ilaria has arrived, collect data from Mohammad to update the website and hosting details which can be done after he arrives.
+--- 
+
+
