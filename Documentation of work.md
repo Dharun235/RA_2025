@@ -192,3 +192,35 @@ Note engagement level
 - Created the portfolio and successfully displayed many correct information but there are some problems with display of special characters.
 - Try to store the file in pc through HTTP after recording using pepper's audio channel. Code- audio_recorder.startMicrophonesRecording(audio_file, "wav", 16000, [0, 0, 1, 0])  and audio_recorder.stopMicrophonesRecording()
 --- 
+
+## **11/3/2025**  
+- Worked from 9 to 17:00.
+- 2 user studies
+- Google sheets for experiment notes created
+- Corrected the filtering of paper type in website
+- Used audio from microphone of pc instead of pepper as it is not possible to stream the audio from pepper's microphone to pc for processing, and used Dialogpt for conversation.
+--- 
+
+## **13/3/2025**  
+- Worked from 9 to 17:00.
+- 2 user studies
+- Tested all the example codes provided before for exhibition. ALTabletService is not working properly, other than that everything works fine.
+--- 
+
+## **18/3/2025**  
+- Worked from 9 to 17:00.
+- 3 user studies
+- Tested all the example codes provided before for exhibition. ALTabletService is not working properly, other than that everything works fine.
+- Website is improved.
+--- 
+
+## **21/3/2025**  
+- Worked from 9 to 17:00.
+- 2 user studies
+- Tested all the example codes provided before for exhibition through choregraphe. ALTabletService is not working properly, other than that everything works fine.
+- Website is improved.
+- 2 methods to run behaviour files (.xar) - choregraphe and qilaunch behavior_file.xar in pepper.
+- Problems to solve: [Factory reset](https://support.old.unitedrobotics.group/en/support/solutions/articles/80001010870-factory-reset-pepper-2-5-) and update the robot after Antonia's experiment to solve AlTabletService, all the projects that doesn't have component of tablet is working through choregraphe in ubuntu 14, chatgpt requires api key, teleoperation script done, tablet service is present but is curopted so need to do factory reset and update which requires email and password and can be doen after Ilaria has arrived, collect data from Mohammad to update the website and hosting details which can be done after he arrives.
+--- 
+
+
