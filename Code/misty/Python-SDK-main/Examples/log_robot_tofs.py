@@ -39,7 +39,7 @@ from mistyPy.Events import Events
 from mistyPy.EventFilters import EventFilters
 from time import time
 
-ROBOT_IP = "192.168.1.45"
+ROBOT_IP = "192.168.0.105"
 
 misty_robot = Robot(ROBOT_IP)
 

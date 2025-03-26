@@ -6,6 +6,7 @@ GridCell = namedtuple('GridCell', ['x', 'y'])
 
 
 class RobotCommands:
+
     def __init__(self, ip: str = "127.0.0.1"):
         self.ip = ip
 
@@ -56,6 +57,16 @@ class RobotCommands:
         """https://docs.mistyrobotics.com/misty-ii/reference/rest/#get_log_level"""
 
         return self.get_request("logs/level")
+
+    def get_oobe_enabled(self) -> Response:
+        """https://docs.mistyrobotics.com/misty-ii/reference/rest/#get_oobe_enabled"""
+
+        return self.get_request("oobe/enabled")
+
+    def get_tally_light_settings(self) -> Response:
+        """https://docs.mistyrobotics.com/misty-ii/reference/rest/#get_tally_light_settings"""
+
+        return self.get_request("tally")
 
     def get_websocket_version(self) -> Response:
         """https://docs.mistyrobotics.com/misty-ii/reference/rest/#get_websocket_version"""
@@ -121,6 +132,21 @@ class RobotCommands:
         json = {"name": name, "base64": base64}
 
         return self.get_request("videos/recordings", json=json)
+
+    def audio_service_enabled(self) -> Response:
+        """https://docs.mistyrobotics.com/misty-ii/reference/rest/#audio_service_enabled"""
+
+        return self.get_request("services/audio")
+
+    def get_av_streaming_service_enabled(self) -> Response:
+        """https://docs.mistyrobotics.com/misty-ii/reference/rest/#get_av_streaming_service_enabled"""
+
+        return self.get_request("services/avstreaming")
+
+    def camera_service_enabled(self) -> Response:
+        """https://docs.mistyrobotics.com/misty-ii/reference/rest/#camera_service_enabled"""
+
+        return self.get_request("services/camera")
 
     def get_available_wifi_networks(self) -> Response:
         """https://docs.mistyrobotics.com/misty-ii/reference/rest/#get_available_wifi_networks"""
@@ -242,72 +268,6 @@ class RobotCommands:
 
         return self.get_request("websockets", json=json)
 
-    def audio_service_enabled(self) -> Response:
-        """https://docs.mistyrobotics.com/misty-ii/reference/rest/#audio_service_enabled"""
-
-        return self.get_request("services/audio")
-
-    def get_av_streaming_service_enabled(self) -> Response:
-        """https://docs.mistyrobotics.com/misty-ii/reference/rest/#get_av_streaming_service_enabled"""
-
-        return self.get_request("services/avstreaming")
-
-    def camera_service_enabled(self) -> Response:
-        """https://docs.mistyrobotics.com/misty-ii/reference/rest/#camera_service_enabled"""
-
-        return self.get_request("services/camera")
-
-    def get_object_temperature(self,
-                               roiLeft: int = None,
-                               roiWidth: int = None,
-                               roiTop: int = None,
-                               roiHeight: int = None,
-                               algorithm: int = None,
-                               debug: bool = None) -> Response:
-        """https://docs.mistyrobotics.com/misty-ii/reference/rest/#get_object_temperature"""
-
-        json = {
-            "roiLeft": roiLeft,
-            "roiWidth": roiWidth,
-            "roiTop": roiTop,
-            "roiHeight": roiHeight,
-            "algorithm": algorithm,
-            "debug": debug
-        }
-
-        return self.get_request("temperature/object", json=json)
-
-    def get_subject_temperature(self,
-                                calROILeft: int = None,
-                                calROIWidth: int = None,
-                                calROITop: int = None,
-                                calROIHeight: int = None,
-                                subjectROILeft: int = None,
-                                subjectROIWidth: int = None,
-                                subjectROITop: int = None,
-                                subjectROIHeight: int = None,
-                                calTemperature: float = None) -> Response:
-        """https://docs.mistyrobotics.com/misty-ii/reference/rest/#get_subject_temperature"""
-
-        json = {
-            "calROILeft": calROILeft,
-            "calROIWidth": calROIWidth,
-            "calROITop": calROITop,
-            "calROIHeight": calROIHeight,
-            "subjectROILeft": subjectROILeft,
-            "subjectROIWidth": subjectROIWidth,
-            "subjectROITop": subjectROITop,
-            "subjectROIHeight": subjectROIHeight,
-            "calTemperature": calTemperature
-        }
-
-        return self.get_request("temperature/subject", json=json)
-
-    def get_temperature_array(self) -> Response:
-        """https://docs.mistyrobotics.com/misty-ii/reference/rest/#get_temperature_array"""
-
-        return self.get_request("temperature/array")
-
     def take_picture(self,
                      base64: bool = None,
                      fileName: str = None,
@@ -337,6 +297,16 @@ class RobotCommands:
         """https://docs.mistyrobotics.com/misty-ii/reference/rest/#python_is_running"""
 
         return self.get_request("python/running")
+
+    def disable_oobe(self) -> Response:
+        """https://docs.mistyrobotics.com/misty-ii/reference/rest/#disable_oobe"""
+
+        return self.post_request("oobe/disable")
+
+    def enable_oobe(self) -> Response:
+        """https://docs.mistyrobotics.com/misty-ii/reference/rest/#enable_oobe"""
+
+        return self.post_request("oobe/enable")
 
     def put_file(self) -> Response:
         """https://docs.mistyrobotics.com/misty-ii/reference/rest/#put_file"""
@@ -549,7 +519,9 @@ class RobotCommands:
                      failoverState: str = None,
                      retrain: bool = None,
                      overwrite: bool = None,
-                     reEntrySpeech: str = None) -> Response:
+                     reEntrySpeech: str = None,
+                     filters: str = None,
+                     requiredContext: str = None) -> Response:
         """https://docs.mistyrobotics.com/misty-ii/reference/rest/#create_state"""
 
         json = {
@@ -572,7 +544,9 @@ class RobotCommands:
             "failoverState": failoverState,
             "retrain": retrain,
             "overwrite": overwrite,
-            "reEntrySpeech": reEntrySpeech
+            "reEntrySpeech": reEntrySpeech,
+            "filters": filters,
+            "requiredContext": requiredContext
         }
 
         return self.post_request("states", json=json)
@@ -840,11 +814,6 @@ class RobotCommands:
         """https://docs.mistyrobotics.com/misty-ii/reference/rest/#stop_speaking_azure"""
 
         return self.post_request("tts/stopazure")
-
-    def perform_system_update(self) -> Response:
-        """https://docs.mistyrobotics.com/misty-ii/reference/rest/#perform_system_update"""
-
-        return self.post_request("system/update")
 
     def display_text(self, text: str = None, layer: str = None) -> Response:
         """https://docs.mistyrobotics.com/misty-ii/reference/rest/#display_text"""
@@ -1157,6 +1126,20 @@ class RobotCommands:
 
         return self.post_request("notification/settings", json=json)
 
+    def set_tally_light_settings(self,
+                                 microphone: bool = None,
+                                 rgbCamera: bool = None,
+                                 slamCamera: bool = None) -> Response:
+        """https://docs.mistyrobotics.com/misty-ii/reference/rest/#set_tally_light_settings"""
+
+        json = {
+            "microphone": microphone,
+            "rgbCamera": rgbCamera,
+            "slamCamera": slamCamera
+        }
+
+        return self.post_request("tally", json=json)
+
     def set_text_display_settings(self,
                                   layer: str = None,
                                   revertToDefault: bool = None,
@@ -1328,6 +1311,11 @@ class RobotCommands:
 
         return self.post_request("hazard/updatebasesettings", json=json)
 
+    def perform_system_update(self) -> Response:
+        """https://docs.mistyrobotics.com/misty-ii/reference/rest/#perform_system_update"""
+
+        return self.post_request("system/update")
+
     def cancel_face_training(self) -> Response:
         """https://docs.mistyrobotics.com/misty-ii/reference/rest/#cancel_face_training"""
 
@@ -1375,6 +1363,24 @@ class RobotCommands:
 
         return self.post_request("audio/speech/captureazure", json=json)
 
+    def capture_speech_deep_speech(self,
+                                   overwriteExisting: bool = None,
+                                   silenceTimeout: int = None,
+                                   maxSpeechLength: int = None,
+                                   requireKeyPhrase: bool = None,
+                                   captureFile: bool = None) -> Response:
+        """https://docs.mistyrobotics.com/misty-ii/reference/rest/#capture_speech_deep_speech"""
+
+        json = {
+            "overwriteExisting": overwriteExisting,
+            "silenceTimeout": silenceTimeout,
+            "maxSpeechLength": maxSpeechLength,
+            "requireKeyPhrase": requireKeyPhrase,
+            "captureFile": captureFile
+        }
+
+        return self.post_request("audio/speech/capturedeepspeech", json=json)
+
     def capture_speech_google(self,
                               overwriteExisting: bool = None,
                               silenceTimeout: int = None,
@@ -1396,6 +1402,24 @@ class RobotCommands:
         }
 
         return self.post_request("audio/speech/capturegoogle", json=json)
+
+    def capture_speech_vosk(self,
+                            overwriteExisting: bool = None,
+                            silenceTimeout: int = None,
+                            maxSpeechLength: int = None,
+                            requireKeyPhrase: bool = None,
+                            captureFile: bool = None) -> Response:
+        """https://docs.mistyrobotics.com/misty-ii/reference/rest/#capture_speech_vosk"""
+
+        json = {
+            "overwriteExisting": overwriteExisting,
+            "silenceTimeout": silenceTimeout,
+            "maxSpeechLength": maxSpeechLength,
+            "requireKeyPhrase": requireKeyPhrase,
+            "captureFile": captureFile
+        }
+
+        return self.post_request("audio/speech/capturevosk", json=json)
 
     def display_image(self,
                       fileName: str = None,
@@ -1719,6 +1743,25 @@ class RobotCommands:
 
         return self.post_request("audio/keyphrase/startazure", json=json)
 
+    def start_key_phrase_recognition_deep_speech(
+            self,
+            overwriteExisting: bool = None,
+            silenceTimeout: int = None,
+            maxSpeechLength: int = None,
+            captureSpeech: int = None,
+            captureFile: bool = None) -> Response:
+        """https://docs.mistyrobotics.com/misty-ii/reference/rest/#start_key_phrase_recognition_deep_speech"""
+
+        json = {
+            "overwriteExisting": overwriteExisting,
+            "silenceTimeout": silenceTimeout,
+            "maxSpeechLength": maxSpeechLength,
+            "captureSpeech": captureSpeech,
+            "captureFile": captureFile
+        }
+
+        return self.post_request("audio/keyphrase/startdeepspeech", json=json)
+
     def start_key_phrase_recognition_google(
             self,
             overwriteExisting: bool = None,
@@ -1741,6 +1784,25 @@ class RobotCommands:
         }
 
         return self.post_request("audio/keyphrase/startgoogle", json=json)
+
+    def start_key_phrase_recognition_vosk(
+            self,
+            overwriteExisting: bool = None,
+            silenceTimeout: int = None,
+            maxSpeechLength: int = None,
+            captureSpeech: int = None,
+            captureFile: bool = None) -> Response:
+        """https://docs.mistyrobotics.com/misty-ii/reference/rest/#start_key_phrase_recognition_vosk"""
+
+        json = {
+            "overwriteExisting": overwriteExisting,
+            "silenceTimeout": silenceTimeout,
+            "maxSpeechLength": maxSpeechLength,
+            "captureSpeech": captureSpeech,
+            "captureFile": captureFile
+        }
+
+        return self.post_request("audio/keyphrase/startvosk", json=json)
 
     def start_object_detector(self,
                               minimumConfidence: float = None,
@@ -1790,11 +1852,6 @@ class RobotCommands:
         json = {"fileName": fileName}
 
         return self.post_request("audio/raw/record/start", json=json)
-
-    def start_thermal_camera(self) -> Response:
-        """https://docs.mistyrobotics.com/misty-ii/reference/rest/#start_thermal_camera"""
-
-        return self.post_request("cameras/thermal/start")
 
     def stop(self, hold: bool = None) -> Response:
         """https://docs.mistyrobotics.com/misty-ii/reference/rest/#stop"""
@@ -1852,11 +1909,6 @@ class RobotCommands:
         """https://docs.mistyrobotics.com/misty-ii/reference/rest/#stop_recording_audio"""
 
         return self.post_request("audio/record/stop")
-
-    def stop_thermal_camera(self) -> Response:
-        """https://docs.mistyrobotics.com/misty-ii/reference/rest/#stop_thermal_camera"""
-
-        return self.post_request("cameras/thermal/stop")
 
     def stop_video_streaming(self) -> Response:
         """https://docs.mistyrobotics.com/misty-ii/reference/rest/#stop_video_streaming"""
