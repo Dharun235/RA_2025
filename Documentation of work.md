@@ -234,6 +234,9 @@ Note engagement level
 - Worked from 9 to 17:00.
 - Website is improved with new pages. 
 - Replied to Aldebran support with serial number - AP990396A14Y9A200044.
+- Learnt and implemented some programs in Misty robot.
+- Connect ethernet to misty -> check for ip address in 192.168.0.1 with admin as username and password -> find the ip address of robot using mac adress mentioned under DHCP client list and also in robot bottom -> Enter in the website to control and program
+- [Documentation for python sdk of misty robot](https://github.com/MistyCommunity/Python-SDK) 
 --- 
 
 
