@@ -230,3 +230,10 @@ Note engagement level
 - Mailed to Aldebran support for ALTabletService not working.
 --- 
 
+## **26/3/2025**  
+- Worked from 9 to 17:00.
+- Website is improved with new pages. 
+- Replied to Aldebran support with serial number - AP990396A14Y9A200044.
+--- 
+
+
