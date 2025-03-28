@@ -240,4 +240,10 @@ Note engagement level
 - New task -  Language interpretor with misty
 --- 
 
+## **28/3/2025**  
+- Worked from 9 to 12:00.
+- Learnt and implemented some programs in Misty robot, but capturing audio is not working properly.
+- 1 experiemnt 
+--- 
+
 
