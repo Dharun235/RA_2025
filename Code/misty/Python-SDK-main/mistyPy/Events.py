@@ -13,15 +13,16 @@ class Events:
 
     available_events = [
         'ActuatorPosition', 'ArTagDetection', 'AudioPlayComplete',
-        'BatteryCharge', 'BumpSensor', 'CriticalStatusMessage', 'DialogAction',
-        'DriveEncoders', 'FaceRecognition', 'FaceTraining', 'HaltCommand',
-        'HazardNotification', 'IMU', 'KeyPhraseRecognized',
-        'LocomotionCommand', 'ObjectDetection', 'ObstacleMap', 'PRUMessage',
-        'RfCommMessage', 'RfCommState', 'RobotCommandMessage',
-        'RobotInteractionState', 'SelfState', 'SerialMessage', 'SkillData',
-        'SkillSystemStateChange', 'SourceFocusConfigMessage',
-        'SourceTrackDataMessage', 'TextToSpeechComplete', 'TimeOfFlight',
-        'TouchSensor', 'UserSkillData', 'VoiceRecord', 'WorldState'
+        'BatteryCharge', 'BumpSensor', 'ChargerPoseMessage',
+        'CriticalStatusMessage', 'DialogAction', 'DriveEncoders',
+        'FaceRecognition', 'FaceTraining', 'HaltCommand', 'HazardNotification',
+        'IMU', 'KeyPhraseRecognized', 'LocomotionCommand', 'ObjectDetection',
+        'ObstacleMap', 'PRUMessage', 'RfCommMessage', 'RfCommState',
+        'RobotCommandMessage', 'RobotInteractionState', 'SelfState','QrTagDetection'
+        'SerialMessage', 'SkillData', 'SkillSystemStateChange', 'SlamStatus',
+        'SourceFocusConfigMessage', 'SourceTrackDataMessage',
+        'TextToSpeechComplete', 'TimeOfFlight', 'TouchSensor', 'UserSkillData',
+        'VoiceRecord', 'WorldState'
     ]
 
     ActuatorPosition = 'ActuatorPosition'
@@ -29,6 +30,7 @@ class Events:
     AudioPlayComplete = 'AudioPlayComplete'
     BatteryCharge = 'BatteryCharge'
     BumpSensor = 'BumpSensor'
+    ChargerPoseMessage = 'ChargerPoseMessage'
     CriticalStatusMessage = 'CriticalStatusMessage'
     DialogAction = 'DialogAction'
     DriveEncoders = 'DriveEncoders'
@@ -46,10 +48,12 @@ class Events:
     RfCommState = 'RfCommState'
     RobotCommandMessage = 'RobotCommandMessage'
     RobotInteractionState = 'RobotInteractionState'
+    QrTagDetection = 'QrTagDetection'
     SelfState = 'SelfState'
     SerialMessage = 'SerialMessage'
     SkillData = 'SkillData'
     SkillSystemStateChange = 'SkillSystemStateChange'
+    SlamStatus = 'SlamStatus'
     SourceFocusConfigMessage = 'SourceFocusConfigMessage'
     SourceTrackDataMessage = 'SourceTrackDataMessage'
     TextToSpeechComplete = 'TextToSpeechComplete'
@@ -61,7 +65,6 @@ class Events:
 
 
 class Event:
-
     def __init__(self,
                  ip,
                  event_type,
@@ -120,7 +123,6 @@ class Event:
         self.is_active = False
 
     def on_open(self):
-
         def run(*args):
             self.ws.send(str(self.get_subscribe_message()))
 
