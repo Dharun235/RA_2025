@@ -246,4 +246,14 @@ Note engagement level
 - 1 experiemnt 
 --- 
 
+## **01/04/2025**  
+- Worked from 9 to 12:00.
+- 2 user studies
+--- 
+
+## **02/-4/2025**  
+- Worked from 9 to 17:00.
+- Created the start version for HRI Trust study setup with website working, but buttons dont properly function in tablet.  
+--- 
+
 
