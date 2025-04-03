@@ -256,4 +256,8 @@ Note engagement level
 - Created the start version for HRI Trust study setup with website working, but buttons dont properly function in tablet.  
 --- 
 
+## **03/-4/2025**  
+- Worked from 9 to 12:00.
+- 1 user study
+--- 
 
