@@ -261,3 +261,8 @@ Note engagement level
 - 1 user study
 --- 
 
+# **08/-4/2025**  
+- Worked from 9 to 12:00.
+- Troubleshooting tablet. Found that physical connection is proper as when typed lsub it shows google inc., pinging the tablet ip - 192.168.0.100 after ssh works, cannot run into sudo as user nao is not given permission to restart naoqi, tabletservice is not found as before, tried to restart the robot physically using button pressing but didnt work, checked into logs in var folder where there are some stuff related to tablet-browser but not related to our issue, there is no problem with version and the only problem is whether altabletservice is not installed or naoqi is cracked or installed properly which can be solved only by aldebran support.
+--- 
+
