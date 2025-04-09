@@ -269,4 +269,6 @@ Note engagement level
 # **09/-4/2025**  
 - Worked from 9 to 15:00.
 - Found from students that autonomous life is not disabled by them and this version doesn't have android studio.
+- Troubleshooting tablet and website hosting process.
+- 
 --- 
