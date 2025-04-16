@@ -279,3 +279,10 @@ Note engagement level
 - Website optimization for Ilaria experiment using JS and flask. Finish this task within this month.
 - Mohammad website is hosted properly. Next steps is to correct the format and complete it within this week or next week.
 ---
+
+# **15/04/2025**  
+- Worked from 9 to 12.
+- Website optimization for Ilaria experiment using JS and flask. Have to create pages for individual tasks.
+- Mohammad website is to be updated with new information.
+---
+
