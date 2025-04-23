@@ -283,6 +283,6 @@ Note engagement level
 # **15/04/2025**  
 - Worked from 9 to 12.
 - Website optimization for Ilaria experiment using JS and flask. Have to create pages for individual tasks.
-- Mohammad website is to be updated with new information.
+- Mohammad website is to be updated with new information. Website host - ssh.strato.de and username -  570617047.swh.strato-hosting.eu and port - 22
 ---
 
