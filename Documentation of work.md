@@ -286,3 +286,9 @@ Note engagement level
 - Mohammad website is to be updated with new information. Website host - ssh.strato.de and username -  570617047.swh.strato-hosting.eu and port - 22
 ---
 
+# **23/04/2025**  
+- Worked from 9 to 15.
+- Website optimization for Ilaria experiment using JS and flask and now creating pages for individual tasks.
+- Mohammad website is currently on updation with new information. 
+---
+
