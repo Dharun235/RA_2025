@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask + MongoDB Text Entry</title>
+</head>
+<body>
+    <h1>Enter your text</h1>
+    <form method="POST">
+        <input type="text" name="user_text" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Stored Texts:</h2>
+    <ul>
+        {% for entry in texts %}
+            <li>{{ entry.text }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

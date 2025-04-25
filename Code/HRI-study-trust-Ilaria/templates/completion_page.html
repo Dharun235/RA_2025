@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment Complete</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container completion-container">
+        <div class="completion-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <h1>Experiment Complete!</h1>
+        <p>Thank you for participating in our Human-Robot Interaction study.</p>
+        <p>Your contributions help advance research in human-robot trust.</p>
+        
+        <div class="results-summary">
+            <h2>Your Final Results</h2>
+            <div class="result-item highlight">
+                <span class="label"><i class="fas fa-coins"></i> Final Bank Total:</span>
+                <span class="value">$<span id="final-bank">0</span></span>
+            </div>
+            <div class="result-item">
+                <span class="label"><i class="fas fa-list-ol"></i> Rounds Completed:</span>
+                <span class="value">20</span>
+            </div>
+        </div>
+        
+        <button onclick="window.location.href='/'">
+            <i class="fas fa-home"></i> Return to Start
+        </button>
+    </div>
+    
+    <div id="celebration" class="celebration"></div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script>
+        // Display final bank amount
+        const params = new URLSearchParams(window.location.search);
+        const finalBank = params.get('bank') || 0;
+        document.getElementById('final-bank').textContent = finalBank;
+        
+        // Create celebration effect
+        function createConfetti() {
+            const celebration = document.getElementById('celebration');
+            const colors = ['#4285F4', '#34A853', '#EA4335', '#FBBC05'];
+            
+            for (let i = 0; i < 100; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.left = Math.random() * 100 + 'vw';
+                confetti.style.top = -10 + 'px';
+                confetti.style.width = Math.random() * 10 + 5 + 'px';
+                confetti.style.height = confetti.style.width;
+                confetti.style.opacity = Math.random() + 0.5;
+                confetti.style.transform = 'rotate(' + Math.random() * 360 + 'deg)';
+                
+                celebration.appendChild(confetti);
+                
+                const animationDuration = Math.random() * 3 + 2;
+                
+                confetti.animate([
+                    { top: -10 + 'px', transform: 'rotate(0deg)' },
+                    { top: 100 + 'vh', transform: 'rotate(' + Math.random() * 360 + 'deg)' }
+                ], {
+                    duration: animationDuration * 1000,
+                    easing: 'cubic-bezier(0.1, 0.8, 0.3, 1)',
+                    fill: 'forwards'
+                });
+                
+                setTimeout(() => {
+                    confetti.remove();
+                }, animationDuration * 1000);
+            }
+        }
+        
+        // Trigger confetti when page loads
+        window.addEventListener('load', createConfetti);
+    </script>
+</body>
+</html>

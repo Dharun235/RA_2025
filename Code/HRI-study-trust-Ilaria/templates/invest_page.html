@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Decision</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="progress-container" id="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <p class="progress-text">Round <span id="round">1</span> of 20</p>
+        
+        <div class="money-display">
+            <i class="fas fa-coins"></i>
+            <span>$<span id="money">100</span> available to invest</span>
+        </div>
+        
+        <h2>Your Investment Decision</h2>
+        <p>How much would you like to give to the robot partner this round?</p>
+        
+        <div class="input-group">
+            <label for="investment"><i class="fas fa-hand-holding-usd"></i> Investment Amount ($):</label>
+            <input type="number" id="investment" min="0" max="100" placeholder="0 - 100">
+        </div>
+        
+        <div id="error-message" style="display: none;"></div>
+        
+        <button id="investButton">
+            <i class="fas fa-paper-plane"></i> Submit Investment
+        </button>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

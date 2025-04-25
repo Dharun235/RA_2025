@@ -1,0 +1,27 @@
+# Enable URL rewriting
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Redirect all HTTP requests to HTTPS
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# Set the default landing page
+DirectoryIndex index.html index.htm
+
+# Deny access to .htaccess itself
+<Files .htaccess>
+  Order allow,deny
+  Deny from all
+</Files>
+
+# Optional: Block access to sensitive file types
+<FilesMatch "\.(ini|log|sh|bak|inc|swp)$">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+# Optional: Set custom error pages (add your own files if needed)
+# ErrorDocument 404 /404.html
+# ErrorDocument 403 /403.html

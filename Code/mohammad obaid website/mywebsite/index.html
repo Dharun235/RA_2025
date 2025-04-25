@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammad Obaid | Chalmers</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Base styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #ffffff;
+      color: #222;
+    }
+
+  header {
+  background-color: #222;   /* dark gray */
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
+    h1, h2 {
+      margin: 0.5em 0;
+    }
+
+    /* Navigation */
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    nav li {
+      display: inline;
+    }
+
+    nav a {
+      display: inline-block;
+      padding: 0.5em 1em;
+      text-decoration: none;
+      color: #333;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      border-radius: 4px;
+    }
+
+    /* Sections */
+    section {
+      padding: 1.5em;
+      text-align: center;
+    }
+
+    /* About section layout */
+    .about-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5em;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    .about-text {
+      max-width: 600px;
+    }
+
+    /* Social links */
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      flex-wrap: wrap;
+      padding: 1em 0;
+    }
+
+    .social-icon {
+      width: 40px;
+      height: auto;
+    }
+
+    /* Footer */
+    footer {
+      font-size: 0.9em;
+      background-color: #f1f1f1;
+    }
+
+    /* Responsive tweaks */
+    @media (min-width: 768px) {
+      .about-content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+      }
+
+      .about-text {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mohammad Obaid</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="NEWS.html">NEWS</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="student_supervision.html">Student Supervision</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="Opportunities.html">Opportunities</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <div class="about-content">
+      <div class="profile-img-container">
+        <img src="mobaid.webp" alt="Profile Picture" class="profile-img" />
+      </div>
+      <div class="about-text">
+        <h2>About</h2>
+        <p>
+          Associate Professor, Interaction Design and Software Engineering,<br />
+          Department of Computer Science and Engineering, Chalmers University of Technology
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="latest-updates">
+    <h2>Latest Updates</h2>
+    <p>Here you can add recent updates or news about your work or projects.</p>
+  </section>
+
+  <section id="find-me-on">
+    <h2>Find Me On</h2>
+    <div class="social-links">
+      <a href="https://scholar.google.com/citations?user=7EIqFn4AAAAJ&hl=en" target="_blank">
+        <img src="scholar.png" alt="Google Scholar" class="social-icon" />
+      </a>
+      <a href="https://research.chalmers.se/en/person/mobaid" target="_blank">
+        <img src="chalmerslogo.jpeg" alt="Chalmers" class="social-icon" />
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mohammad Obaid. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

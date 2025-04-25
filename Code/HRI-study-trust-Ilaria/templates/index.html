@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRI Trust Experiment</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header-icon">
+            <i class="fas fa-robot"></i>
+        </div>
+        <h1>Human-Robot Trust Experiment</h1>
+        <p>Welcome to our study on trust between humans and robots. You'll complete 20 rounds of investment decisions with a robot partner.</p>
+        
+        <div class="input-group">
+            <label for="person_id"><i class="fas fa-id-card"></i> Enter Participant ID:</label>
+            <input type="text" id="person_id" placeholder="Your unique ID">
+        </div>
+        
+        <button id="startButton">
+            <i class="fas fa-play"></i> Begin Experiment
+        </button>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
