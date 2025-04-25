@@ -246,4 +246,49 @@ Note engagement level
 - 1 experiemnt 
 --- 
 
+## **01/04/2025**  
+- Worked from 9 to 12:00.
+- 2 user studies
+--- 
+
+## **02/04/2025**  
+- Worked from 9 to 17:00.
+- Created the start version for HRI Trust study setup with website working, but buttons dont properly function in tablet.  
+--- 
+
+## **03/04/2025**  
+- Worked from 9 to 12:00.
+- 1 user study
+--- 
+
+# **08/04/2025**  
+- Worked from 9 to 12:00.
+- Troubleshooting tablet. Found that physical connection is proper as when typed lsub it shows google inc., pinging the tablet ip - 192.168.0.100 after ssh works, qicli list doesn't provide AlTabletService, cannot run into sudo as user nao is not given permission to restart naoqi, tabletservice is not found as before, tried to restart the robot physically using button pressing but didnt work, checked into logs in var folder where there are some stuff related to tablet-browser but not related to our issue, there is no problem with version and the only problem is whether altabletservice is not installed or naoqi is cracked or installed properly which can be solved only by aldebran support.
+--- 
+
+# **09/04/2025**  
+- Worked from 9 to 15:00.
+- Found from students that autonomous life is not disabled by them and this version doesn't have android studio.
+- Troubleshooting tablet and website hosting process.
+- 
+---
+
+# **15/04/2025**  
+- Worked from 9 to 12 and 14-16.
+- 4 Experiments completed and Antonia's experiments are done
+- Website optimization for Ilaria experiment using JS and flask. Finish this task within this month.
+- Mohammad website is hosted properly. Next steps is to correct the format and complete it within this week or next week.
+---
+
+# **15/04/2025**  
+- Worked from 9 to 12.
+- Website optimization for Ilaria experiment using JS and flask. Have to create pages for individual tasks.
+- Mohammad website is to be updated with new information. Website host - ssh.strato.de and username -  570617047.swh.strato-hosting.eu and port - 22
+---
+
+# **23/04/2025**  
+- Worked from 9 to 15.
+- Website optimization for Ilaria experiment using JS and flask and now creating pages for individual tasks.
+- Mohammad website is currently on updation with new information. 
+---
 
