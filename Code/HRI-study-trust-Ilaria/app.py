@@ -4,15 +4,38 @@ import random
 import csv
 import os
 from flask_cors import CORS
+import random
+import numpy as np
 
 bank = 0
 app = Flask(__name__)
 CORS(app)
-PEPPER_MODE = True  # Set True when using Pepper
+PEPPER_MODE = False  # Set True when using Pepper
 CSV_FILE = "data/results.csv"
 
 # Ensure data directory exists
 os.makedirs("data", exist_ok=True)
+
+# random number 
+def normal_random(investment):
+    # Define the range of possible return values
+    max_return = 3 * investment
+    min_return = 0
+    
+    # Define the midpoint of the range
+    mid_point = max_return // 2
+    
+    # Set the standard deviation for the normal distribution
+    # Standard deviation controls the spread. A smaller value gives a narrower peak, and a larger value gives a wider one.
+    std_dev = max_return / 6  # This is a typical choice for normalization
+
+    # Generate a random number from a normal distribution centered at mid_point
+    value = np.random.normal(mid_point, std_dev)
+    
+    # Clip the value to ensure it's within the valid range [min_return, max_return]
+    value = max(min_return, min(max_return, round(value)))
+    
+    return value
 
 # Create CSV file with headers if it doesn't exist
 if not os.path.exists(CSV_FILE):
@@ -56,13 +79,16 @@ def invest():
         return jsonify({"error": "Missing required fields"}), 400
 
     # Simulate a return amount
-    returned = random.randint(0, 3 * investment)
+    returned = normal_random(investment)
     classification = "Trustful" if returned >= investment else "Untrustful"
 
     # Calculate new balances
     money = 100 
     if (investment - returned):
         bank += returned
+
+    # chatgpt powered or not?
+    gpt_powered = "yes"
 
     # Pepper mode activated
     if PEPPER_MODE:
@@ -85,7 +111,7 @@ def invest():
         writer = csv.writer(file)
         writer.writerow([
             person_id, round_num, investment, 
-            returned, classification, money, bank
+            returned, classification, money, bank, gpt_powered
         ])
 
     return jsonify({
