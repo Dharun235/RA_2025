@@ -294,5 +294,5 @@ Note engagement level
 # **24/04/2025**  
 - Worked from 9 to 12.
 - Website for Ilaria experiment is not completed becuase of some coding errors in js. New tasks are given. 
-- Mohammad website is currently on updation with new information. 
+- Mohammad website is updated with new information. 
 ---
