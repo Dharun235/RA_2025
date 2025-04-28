@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Obaid | Chalmers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header style="text-align: center; padding: 1.5em;">
+        <h1 style="margin-bottom: 0.2em;">Mohammad Obaid</h1>
+        <span style="font-size: 0.8em; color: gray;">Docent (SE), PhD (NZ), MSc (1st Class Honors), BSc</span>
+        
+        <nav style="margin-top: 1em;">
+          <ul style="list-style: none; padding: 0; display: flex; justify-content: center; gap: 1.5em;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="NEWS.html">News</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="student_supervision.html">Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+      <section id="Opportunities" style="padding: 2em;">
+        <p>For inquiries or collaboration opportunities, feel free to contact me:</p>
+      
+        <p>
+          <strong>Email:</strong> <a href="#" id="email-link">[email protected]</a><br>
+          <strong>Phone:</strong> <span id="phone-number">[phone protected]</span><br>
+          <strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/mohammad-obaid-b0003414" target="_blank" style="display: inline-flex; align-items: center;">
+            <img src="Linkedin.png" alt="LinkedIn" style="width: 20px; height: 20px; object-fit: contain; margin-left: 5px;">
+          </a>
+        </p>
+      
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            // Email protection
+            var user = "mobaid";
+            var domain = "chalmers.se";
+            var emailLink = document.getElementById("email-link");
+            emailLink.href = "mailto:" + user + "@" + domain;
+            emailLink.textContent = user + "@" + domain;
+      
+            // Phone protection
+            var phone = "+46 766084778"; // Your real number
+            document.getElementById("phone-number").textContent = phone;
+          });
+        </script>
+      </section>
+      
+      
+      
+
+    <footer>
+        <p>&copy; 2025 Mohammad Obaid. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
