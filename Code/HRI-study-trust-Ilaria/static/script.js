@@ -88,6 +88,19 @@ function nextRound() {
     window.location.href = `/invest_page?person_id=${encodeURIComponent(personId)}&round=${round}&money=${money}`;
 }
 
+function updateProgressBar() {
+    const progressBar = document.getElementById('progressBar');
+    const progressText = document.getElementById('progressText');
+    
+    // Calculate the percentage
+    const percentage = Math.round((round / 20) * 100);
+    
+    // Update the progress bar value and text
+    progressBar.value = percentage;
+    progressText.textContent = `Round ${round} of 20 - ${percentage}%`;
+}
+
+
 // Initialize page based on current URL
 function initPage() {
     const params = new URLSearchParams(window.location.search);
@@ -129,6 +142,7 @@ function initPage() {
         document.getElementById('money').textContent = money;
         document.getElementById('bank').textContent = bank;
         document.getElementById('nextButton').addEventListener('click', nextRound);
+        updateProgressBar();  
     }
     else if (path === "/completion_page") {
         document.getElementById('final-bank').textContent = bank;

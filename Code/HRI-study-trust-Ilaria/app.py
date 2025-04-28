@@ -19,11 +19,12 @@ os.makedirs("data", exist_ok=True)
 # random number 
 def normal_random(investment):
     # Define the range of possible return values
-    max_return = 3 * investment
+    max_return = 3 * (investment)
     min_return = 0
     
     # Define the midpoint of the range
-    mid_point = max_return // 2
+    mid_point = (max_return) // 2
+
     
     # Set the standard deviation for the normal distribution
     # Standard deviation controls the spread. A smaller value gives a narrower peak, and a larger value gives a wider one.
@@ -61,6 +62,7 @@ def results_page():
 
 @app.route('/completion_page')
 def completion_page():
+    bank = 0
     return render_template('completion_page.html')
 
 @app.route('/invest', methods=['POST'])
@@ -71,9 +73,9 @@ def invest():
     if not data:
         return jsonify({"error": "No data received"}), 400
 
-    person_id = data.get('person_id')
-    round_num = data.get('round')
-    investment = data.get('investment')
+    person_id = int(data.get('person_id'))
+    round_num = int(data.get('round'))
+    investment = int(data.get('investment'))
 
     if None in (person_id, round_num, investment):
         return jsonify({"error": "Missing required fields"}), 400
