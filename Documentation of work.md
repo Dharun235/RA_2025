@@ -301,3 +301,8 @@ Note engagement level
 - Website for Ilaria experiment is updated and progress bar is to be corrected. 2nd task is started, preferably uses flask, python sdk instead of ros, subprocess, basic webpage using html. 
 - Mohammad website is updated with new publications but havent done the bibtex link for all 3 publications. 
 ---
+# **02/05/2025**  
+- Worked from 9 to 15.
+- Basic architecture for communication with gemini, pepper and user is done via pc microphone.
+- Robot behaviour for different states of the game is almost over adn currently testing and improving the behaviour. Next is to embed them with the game.  
+---
