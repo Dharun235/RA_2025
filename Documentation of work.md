@@ -299,7 +299,7 @@ Note engagement level
 # **28/04/2025**  
 - Worked from 9 to 12.
 - Website for Ilaria experiment is updated and progress bar is to be corrected. 2nd task is started, preferably uses flask, python sdk instead of ros, subprocess, basic webpage using html. 
-- Mohammad website is updated with new publications but havent done the bibtex link for all 3 publications. 
+- Mohammad website is updated with new publications but havent done the bibtex link for 2 publications. 
 ---
 # **02/05/2025**  
 - Worked from 9 to 15.
