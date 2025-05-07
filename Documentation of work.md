@@ -306,3 +306,9 @@ Note engagement level
 - Basic architecture for communication with gemini, pepper and user is done via pc microphone.
 - Robot behaviour for different states of the game is almost over adn currently testing and improving the behaviour. Next is to embed them with the game.  
 ---
+
+# **07/05/2025**  
+- Worked from 9 to 15.
+- Created the functions for pepper movement and gpt interface and embedded with the game.
+- Have to fine tune the functions and proper timing of gpt interface
+---
