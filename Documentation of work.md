@@ -312,3 +312,17 @@ Note engagement level
 - Created the functions for pepper movement and gpt interface and embedded with the game.
 - Have to fine tune the functions and proper timing of gpt interface
 ---
+
+# **07/05/2025**  
+- Worked from 9 to 12.
+- Used multiprocessing for handling the gpt and game process parallel
+- The following tasks are to be done next. 
+1. in the game architecture, I would like you to add the option for a delay (this could be a random number between 3 and 6 seconds) before the robot does anything in response to a human's action. So basically, every time the human asks a question, the robot would wait before answering, every time the human makes an action in the game, the robot waits before starting a movement or performing another action. This could be one of our two conditions. Once this is ready, we will video record some trials and do the online experiment to figure out what people think is AI vs hard-coded
+2. in the game architecture, have placeholders ready for adding gesture commands that the robot will perform every time an action is triggered. For example, every time the robot speaks to the human, it makes a corresponding gesture, every time the robot returns money, it also makes a corresponding gesture. What the gesture exactly is is still tbd (I'll send you a list later), but for now, just have placeholders ready
+3. we would like the robot to say something at every turn of the game, even if the human doesn't initiate dialogue. For this, we could take inspiration from a list of sentences we used in previous experiments, using few shot prompting. Please read the documentation that I sent you earlier, and I will send some examples of these sentences later
+10:09
+4. after these things are set up, we will record videos and run the online experiment. I have everything already in place for the experiment, just missing the videos. Do you think that end of May could be a realistic timeline for having finished with parts 1-3?
+10:10
+5. While we run the online experiment, please continue working on the listening agent. By that time I will also have received the room microphone that I want to use.
+- The main thing to clarify is to have for the entire experiment is to have AI / non AI and Trust and Non trust. 
+---
