@@ -16,7 +16,7 @@ This repository contains necessary codes for the experiment - Investment Game Ex
 
 ## 📘 About
 
-Brief explanation of what your project does and why it's useful.
+setup of investment game experiment
 
 ## ✨ Features
 
