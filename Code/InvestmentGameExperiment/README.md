@@ -95,7 +95,7 @@ Similarly, find and update the Pepper robot's IP address in the following script
 Replace the placeholder with your Pepper robot's IP address:
 
 ```bash
-PEPPER_IP = "192.168.1.108"  # Replace with your Pepper's IP address
+PEPPER_IP = "xxx.xxx.x.xxx"  # Replace with your Pepper's IP address
 ```
 
 ### 🚀 Run the Application
