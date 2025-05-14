@@ -34,7 +34,7 @@ setup of investment game experiment
 
 The project directory is organized as follows:
 
-- **`HRI-study-trust-Ilaria/`**
+- **`InvestmentGameExperiment/`**
   - **`data/`**: Contains the CSV file `results.csv` which stores the values of various variables like participant ID, money, GPT-powered, etc.
   - **`gpt/`**: Contains the scripts relevant to the Gemini AI model.
   - **`pepper/`**: Contains NAOQI-powered Python 2 scripts handling TTS and movement of the Pepper robot based on the current state.
@@ -53,14 +53,13 @@ The project directory is organized as follows:
 Start by cloning the repository to your local machine:
 
 ```bash
-git clone https://github.com/Dharun235/RA_2025/tree/main/Code/HRI-study-trust-Ilaria
+git clone https://github.com/Dharun235/RA_2025/tree/main/Code/InvestmentGameExperiment
 ```
 
 ### 2️⃣ Navigate to the Project Directory
 Change to the project directory:
 
-```
-bash
+```bash
 cd HRI-study-trust-Ilaria
 ```
 
@@ -69,15 +68,13 @@ Choose the appropriate Python version and run the corresponding command:
 
 #### 👉 For Python 2:
 
-```
-bash
+```bash
 pip2 install -r requirements_py2.txt
 ```
 
 #### 👉 For Python 3:
 
-```
-bash
+```bash
 pip3 install -r requirements_py3.txt
 ```
 
@@ -87,8 +84,7 @@ Before running the project, you must update the API key and Pepper robot's IP ad
 #### 1️⃣ Change the API Key
 Open the gpt/gpt_interface.py file and locate the line where the API key is defined. Replace the placeholder with your actual API key:
 
-```
-python
+```bash
 client = genai.Client(api_key="YOUR_API_KEY_HERE")  # Replace with your actual API key
 ```
 
@@ -98,8 +94,7 @@ Similarly, find and update the Pepper robot's IP address in the following script
 ● pepper/speak.py
 Replace the placeholder with your Pepper robot's IP address:
 
-```
-python
+```bash
 PEPPER_IP = "192.168.1.108"  # Replace with your Pepper's IP address
 ```
 
