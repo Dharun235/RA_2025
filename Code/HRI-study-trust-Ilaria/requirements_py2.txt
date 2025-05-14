@@ -1,0 +1,2 @@
+# Python 2 requirements (must install NAOqi manually)
+# Download NAOqi SDK from: http://doc.aldebaran.com/2-5/dev/python/install_guide.html
