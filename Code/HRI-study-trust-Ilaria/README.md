@@ -30,18 +30,22 @@ Brief explanation of what your project does and why it's useful.
 - Naoqi
 - Model - gemini-2.0-flash
 
-## 📂 Project Structure
-HRI-study-trust-Ilaria/
-├── data/ # Contains csv file results.csv which stores the values of various variables such as participant id, money, gpt-powered, etc
-├── gpt/ # Contains the scripts relevant to Gemini AI model
-├── pepper/ # Contains NAOQI powered python 2 scripts handling the tts and movement of pepper robot in accordance to the current state
-├── static/ # Contains js and css files handling the backend and style of the web application
-├── templates/ # Contains html files of different states of the game - start, investing, thinking, results and final completion
-├── test/ # Test folder which can be used for independent testing of modules
-├── requirements_py2.txt # Requirements file for python 3 dependencies
-├── requirements_py3.txt # Requirements file for python 3 dependencies
-├── app.py # Overall app handling both web application and user gemini communication. 
-└── README.md # The main README file
+## 📁 Project Structure
+
+The project directory is organized as follows:
+
+- **`HRI-study-trust-Ilaria/`**
+  - **`data/`**: Contains the CSV file `results.csv` which stores the values of various variables like participant ID, money, GPT-powered, etc.
+  - **`gpt/`**: Contains the scripts relevant to the Gemini AI model.
+  - **`pepper/`**: Contains NAOQI-powered Python 2 scripts handling TTS and movement of the Pepper robot based on the current state.
+  - **`static/`**: Contains JS and CSS files that manage the backend and styling of the web application.
+  - **`templates/`**: Contains HTML files for different states of the game (start, investing, thinking, results, and final completion).
+  - **`test/`**: Test folder for independent testing of modules.
+  - **`requirements_py2.txt`**: Requirements file for Python 2 dependencies.
+  - **`requirements_py3.txt`**: Requirements file for Python 3 dependencies.
+  - **`app.py`**: Overall app handling both web application and user-Gemini communication.
+  - **`README.md`**: The main README file.
+
 
 ## ⚙️ Setup and Usage
 
@@ -102,8 +106,7 @@ PEPPER_IP = "192.168.1.108"  # Replace with your Pepper's IP address
 ### 🚀 Run the Application
 Once you have completed the setup, you can run the application:
 
-```
-bash
+```bash
 python app.py
 ```
 
