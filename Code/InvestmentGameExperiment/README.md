@@ -20,9 +20,9 @@ setup of investment game experiment
 
 ## ✨ Features
 
-- ✅ Web based interface 
-- ✅ Fully autonomous system
-- ✅ Gemini AI for communication
+- Web based interface 
+- Fully autonomous system
+- Gemini AI for communication
 
 ## 🧰 Tech Stack
 
