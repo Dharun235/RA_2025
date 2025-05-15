@@ -9,6 +9,9 @@ from google import genai
 import speech_recognition as sr
 import subprocess
 
+# C
+client = genai.Client(api_key="AIzaSyC3NHq1XSTbgtEcxo4w4in-toMicl4asig") # Replace with your actual API key
+
 
 def get_user_message():
     """Function to get user input via speech recognition."""
@@ -59,5 +62,3 @@ def generate_response(prompt, user_message):
     )
     return response.text
 
-if __name__ == "__main__":
-    client = genai.Client(api_key="AIzaSyC3NHq1XSTbgtEcxo4w4in-toMicl4asig") # Replace with your actual API key
