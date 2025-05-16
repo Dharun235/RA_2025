@@ -313,7 +313,7 @@ Note engagement level
 - Have to fine tune the functions and proper timing of gpt interface
 ---
 
-# **07/05/2025**  
+# **09/05/2025**  
 - Worked from 9 to 12.
 - Used multiprocessing for handling the gpt and game process parallel
 - The following tasks are to be done next. 
@@ -325,4 +325,10 @@ Note engagement level
 10:10
 5. While we run the online experiment, please continue working on the listening agent. By that time I will also have received the room microphone that I want to use.
 - The main thing to clarify is to have for the entire experiment is to have AI / non AI and Trust and Non trust. 
+---
+# **14/05/2025**  
+- Worked from 9 to 16.
+- Did all the tasks mentioned except the microphone.
+- Have to test everything and fine tune the prompts for each function.
+- Have to get the robot movmements from Ilaria soon this month.
 ---
