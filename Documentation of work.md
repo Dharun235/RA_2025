@@ -332,3 +332,14 @@ Note engagement level
 - Have to test everything and fine tune the prompts for each function.
 - Have to get the robot movmements from Ilaria soon this month.
 ---
+
+# **16/05/2025**  
+- Worked from 9 to 12.
+-  Regarding the gestures of the robot, here are some gestures that are already pre-built in choregraphe:
+1) self and others: fastpointatuser (points to the human), openarminfront (used to invite to participate in a conversation, or pointing at an object);
+2) affirmation: wide open both hands (to widely invite to participate in a conversation)
+3) question: slowly offer both hands (it's meant to be used when waiting for an answer from the human); question lean front (robot leans towards the human)
+3) moods (both negative and positive).
+if you use the motion timeline, you can create new movements (you can have each joint move at the same time, by having two overlapping timelines)
+- Have to use these with python, one way is to do behaviour code and another is to copy the script. Both dont work as for former, the files are trasnfered but the xar files are not identified as behavior meanwhile for later, no access to script for the required behaviors.
+---
