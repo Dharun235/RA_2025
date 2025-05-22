@@ -343,3 +343,12 @@ Note engagement level
 if you use the motion timeline, you can create new movements (you can have each joint move at the same time, by having two overlapping timelines)
 - Have to use these with python, one way is to do behaviour code and another is to copy the script. Both dont work as for former, the files are trasnfered but the xar files are not identified as behavior meanwhile for later, no access to script for the required behaviors.
 ---
+
+# **22/05/2025**  
+- Worked from 9 to 10 and from 13 to 17.
+- Created the custom movement functions as the behaviors werent working. Need to fine tune it.
+- ALways robot to be in Autonomous Life mode.
+- Need to create the few shot prompts for each stage of the game.
+- Need to do a small experiment to notice the delay of the actions tomorrow for the AI vs non AI.
+- The problem of the gemini ai replying in style - role: assistant, content: xxx to be eradicated.
+---
