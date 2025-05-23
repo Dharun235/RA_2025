@@ -352,3 +352,12 @@ if you use the motion timeline, you can create new movements (you can have each 
 - Need to do a small experiment to notice the delay of the actions tomorrow for the AI vs non AI.
 - The problem of the gemini ai replying in style - role: assistant, content: xxx to be eradicated.
 ---
+
+# **23/05/2025**  
+- Worked from 9 to 12.
+- Integrated the movements to game, but doenst execute properly.
+- AI vs Non AI differentiation with timer doenst seem good. So remove timer, and make as AI - fully autonomous experiment and NON AI as instruction given experiment, both has pepper communication, but the later has only specific instruction to talk.
+- Used pgadmin for database to navigate conversations to one file for easy fetch and retrieve but advised to use SQLITE with python as it is much simpler to do.
+- So next task is to split the AI vs NON AI system entirely, make the AI system experiment fully autonomous. Add the emergency responses. Make the game and conversation go in parallel.
+- Experiments will take place on June mid and august mid. So need to complete within June first week. 
+---
