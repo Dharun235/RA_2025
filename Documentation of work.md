@@ -361,3 +361,10 @@ if you use the motion timeline, you can create new movements (you can have each 
 - So next task is to split the AI vs NON AI system entirely, make the AI system experiment fully autonomous. Add the emergency responses. Make the game and conversation go in parallel.
 - Experiments will take place on June mid and august mid. So need to complete within June first week. 
 ---
+
+# **27/05/2025**  
+- Worked from 15 to 17.
+- Fixed to the csv and text file for data logging, seperate for game data and seperate for conversations. If it works properly, then remain, otherwise have to look into database usage.
+- Need to find a way to integrate conversation and game seamlessly, the current problem I face is making the conversation always running irrespective of game, and change the prompt according to each state of the game.
+- Tomorrow show an example of the game running fully.
+---
