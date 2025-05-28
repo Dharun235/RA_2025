@@ -368,3 +368,10 @@ if you use the motion timeline, you can create new movements (you can have each 
 - Need to find a way to integrate conversation and game seamlessly, the current problem I face is making the conversation always running irrespective of game, and change the prompt according to each state of the game.
 - Tomorrow show an example of the game running fully.
 ---
+
+# **27/05/2025**  
+- Worked from 9 - 13, 15-17.
+- Successfully integrated the conversations with the stages of game through threading using semaphore concept to prevent overlapping of conversations.
+- Fine tuned the prompts for each stage using few shot prompting.
+- Only problem faced now is the sad behavior which gets into loop.
+---
