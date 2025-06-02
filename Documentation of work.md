@@ -369,7 +369,7 @@ if you use the motion timeline, you can create new movements (you can have each 
 - Tomorrow show an example of the game running fully.
 ---
 
-# **27/05/2025**  
+# **28/05/2025**  
 - Worked from 9 - 12, 13-14, 15-17.
 - Successfully integrated the conversations with the stages of game through threading using semaphore concept to prevent overlapping of conversations.
 - Fine tuned the prompts for each stage using few shot prompting.
