@@ -386,7 +386,7 @@ if you use the motion timeline, you can create new movements (you can have each 
 - Looping behavior stopped.
 - Screen lock can be done by running command - "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --kiosk "http://192.168.0.101:5000" --edge-kiosk-type=fullscreen in command prompt after running the python app.py
 - Overall game without GPT works well. Your laptop is to be used for experiment, no tablet.
-- Integrating communication has some parts - interruption of mic and pepper voice is corrected, at every stage conversation is initiated by gemini, and the following is to be done for the gpt_conversation function.
+- Integrating communication has some parts - interruption of mic and pepper voice is corrected, at every stage conversation is initiated by gemini, and the following is to be done for the gpt_conversation function. Code is to be changed in test1.py and then     use app.py for final remarks.
   A continuous, always-listening loop:
       1) Pepper speaks the stage prompt once at the very beginning.
       2) Then Pepper listens indefinitely:
