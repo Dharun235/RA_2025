@@ -381,3 +381,23 @@ if you use the motion timeline, you can create new movements (you can have each 
 - Added the debugging code and reset code for each task using semaphore concept to handle only one task at a time.
 - Same problem of behavior into loop occurs even when removed the particular code.
 ---
+# **02/05/2025**  
+- Worked from 9 - 11.
+- Looping behavior stopped.
+- Screen lock can be done by running command - "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --kiosk "http://192.168.0.101:5000" --edge-kiosk-type=fullscreen in command prompt after running the python app.py
+- Overall game without GPT works well. Your laptop is to be used for experiment, no tablet.
+- Integrating communication has some parts - interruption of mic and pepper voice is corrected, at every stage conversation is initiated by gemini, and the following is to be done for the gpt_conversation function.
+  A continuous, always-listening loop:
+      1) Pepper speaks the stage prompt once at the very beginning.
+      2) Then Pepper listens indefinitely:
+         • If no speech for 10 seconds → Pepper “re-sparks” with a gentle nudge.
+         • If user speaks:
+             – Check intent: if “stop,” say goodbye and exit.
+             – Otherwise, generate a response and speak it.
+         • Loop back to listening again.
+      3) The only way out of the loop is either:
+         • stop_event.set() is called, or
+         • the user’s intent is classified as “stop.”
+- Next week full game display.
+---
+    
