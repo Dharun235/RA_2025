@@ -376,7 +376,7 @@ if you use the motion timeline, you can create new movements (you can have each 
 - Only problem faced now is the sad behavior which gets into loop.
 ---
 
-# **28/05/2025**  
+# **02/05/2025**  
 - Worked from 9 - 11.
 - Added the debugging code and reset code for each task using semaphore concept to handle only one task at a time.
 - Same problem of behavior into loop occurs even when removed the particular code.
