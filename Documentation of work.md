@@ -376,12 +376,12 @@ if you use the motion timeline, you can create new movements (you can have each 
 - Only problem faced now is the sad behavior which gets into loop.
 ---
 
-# **02/05/2025**  
+# **02/06/2025**  
 - Worked from 9 - 11.
 - Added the debugging code and reset code for each task using semaphore concept to handle only one task at a time.
 - Same problem of behavior into loop occurs even when removed the particular code.
 ---
-# **02/05/2025**  
+# **04/06/2025**  
 - Worked from 9 - 11.
 - Looping behavior stopped.
 - Screen lock can be done by running command - "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --kiosk "http://192.168.0.101:5000" --edge-kiosk-type=fullscreen in command prompt after running the python app.py
@@ -402,7 +402,7 @@ if you use the motion timeline, you can create new movements (you can have each 
 ---
     
 
-# **09/05/2025**  
+# **09/06/2025**  
 - Worked from 9 - 13.
 - Added a delay according to the number of characters to make sure the mic doesnt overlap with the pepper's speech.
 - The correct logic for the game with and without gpt is implemented and the prompts for each type of speech is tuned.
