@@ -408,4 +408,5 @@ if you use the motion timeline, you can create new movements (you can have each 
 - The correct logic for the game with and without gpt is implemented and the prompts for each type of speech is tuned.
 - Have to tune the prompts for initial prompt at each stage and the response to be much shorter and reduce the delay between the pepper's speech and the mic listening to make it look more real.
 - Need to find way to make the entire game more faster.
+- Ensure the number of rounds is 10.
 ---
