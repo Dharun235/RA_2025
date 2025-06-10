@@ -410,3 +410,11 @@ if you use the motion timeline, you can create new movements (you can have each 
 - Need to find way to make the entire game more faster.
 - Ensure the number of rounds is 10.
 ---
+
+# **10/06/2025**  
+- Worked from 13 - 17.
+- Solved problems before.
+- Had to make the reaction for results come in thinking page.
+- Had to make the delay after invest page to reduce when using gpt.
+- Had to make the unified gpt instead of creating and deleting threads.
+---
