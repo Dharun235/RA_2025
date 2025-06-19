@@ -1,0 +1,4 @@
+S:\JOB\Amaneus\pepperchat\python.exe
+
+for pip for python2, use S:\JOB\Amaneus\pepperchat\python.exe -m pip ...
+    

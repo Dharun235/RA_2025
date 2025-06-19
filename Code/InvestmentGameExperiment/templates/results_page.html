@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Round Results</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+    <div class="container results-container">
+        <h2>Round <span id="round">1</span> Results</h2>
+
+        <div class="results-grid">
+            <div class="result-item">
+                <span class="label"><i class="fas fa-arrow-up"></i> You Invested:</span>
+                <span class="value">$<span id="investment">0</span></span>
+            </div>
+            <div class="result-item">
+                <span class="label"><i class="fas fa-arrow-down"></i> Robot Returned:</span>
+                <span class="value">$<span id="returned">0</span></span>
+            </div>
+            <div class="result-item">
+                <span class="label"><i class="fas fa-piggy-bank"></i> Bank Total:</span>
+                <span class="value">$<span id="bank">0</span></span>
+            </div>
+        </div>
+
+        <button id="nextButton">
+            <i class="fas fa-arrow-right"></i> Continue to Next Round
+        </button>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
