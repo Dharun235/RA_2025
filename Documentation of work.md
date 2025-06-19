@@ -418,3 +418,10 @@ if you use the motion timeline, you can create new movements (you can have each 
 - Had to make the delay after invest page to reduce when using gpt.
 - Had to make the unified gpt instead of creating and deleting threads.
 ---
+
+# **10/06/2025**  
+- Worked from 13 - 17.
+- Solved the problem of kiosk and loading page using electron, making the setup easier.
+- Old code without autonomous life is used even though it has delay as the problem of loading is solved.
+- GPT and README file has to be optimized.
+---
