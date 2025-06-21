@@ -419,9 +419,17 @@ if you use the motion timeline, you can create new movements (you can have each 
 - Had to make the unified gpt instead of creating and deleting threads.
 ---
 
-# **10/06/2025**  
-- Worked from 13 - 17.
+# **18/06/2025**  
+- Worked from 9 - 14.
 - Solved the problem of kiosk and loading page using electron, making the setup easier.
 - Old code without autonomous life is used even though it has delay as the problem of loading is solved.
 - GPT and README file has to be optimized.
 ---
+
+# **19/06/2025**  
+- Worked from 13 - 17.
+- Stored the web-app-loader in google drive for downloading.
+- Need to have a parameter based game to input the game type of AI/ Non AI and Trustworthy/ Untrustworthy for the whole game at the start.
+- Optimize the GPT for the whole game such that it talks only when the user havent responded for a long time for conversation as there are already default dialogues delivered by the robot.
+---
+
