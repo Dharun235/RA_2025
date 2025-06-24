@@ -431,5 +431,6 @@ if you use the motion timeline, you can create new movements (you can have each 
 - Stored the web-app-loader in google drive for downloading.
 - Need to have a parameter based game to input the game type of AI/ Non AI and Trustworthy/ Untrustworthy for the whole game at the start.
 - Optimize the GPT for the whole game such that it talks only when the user havent responded for a long time for conversation as there are already default dialogues delivered by the robot.
+- Wednesday we should try to finalise the game, see if there are any outstanding issues, and then on Thursday we will try to set it up on my computer, and on my collaborator's computer
 ---
 
