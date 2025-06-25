@@ -75,6 +75,11 @@ python app.py
 https://drive.google.com/drive/folders/1EKmt6cJFKGBHKUP-uFWhS5jRvawCBC-D?usp=sharing 
 
 - Place the `web-app-loader` into the root folder.
+- Change the url of line 40 of web-app-loader/main.js to the url provided by the flask app. The line is given below.
+    
+```bash
+    mainWindow.loadURL('http://url-provided-by-flask-app');
+```
 
 - Then run the below commands in a seperate terminal:
 
