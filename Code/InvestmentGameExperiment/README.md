@@ -61,6 +61,16 @@ PEPPER_IP = "xxx.xxx.x.xxx"  # Replace with your Pepper's IP address
 #### Update the AI/ Non AI and Trust or Untrust conditions 
 Change the line 34 in app.py to "not" or "yes" to set no AI and AI condition and line 18 in utils/utils_func.py to "T" or "U" to set to trustworthy or untrustworthy condition.
 
+- Line 34 of app.py
+```bash 
+gpt_powered = "not"  # Default value is "not". It can be set to "yes" if the app is powered by GPT.
+```
+
+- Line 18 in utils/utils_func.py
+```bash
+trust = 'U' # T for trustworthy, U for untrustworthy
+```
+
 ### 4. Run the Application
 
 ```bash
@@ -78,7 +88,7 @@ https://drive.google.com/drive/folders/1EKmt6cJFKGBHKUP-uFWhS5jRvawCBC-D?usp=sha
 - Change the url of line 40 of web-app-loader/main.js to the url provided by the flask app. The line is given below.
     
 ```bash
-    mainWindow.loadURL('http://url-provided-by-flask-app');
+mainWindow.loadURL('http://url-provided-by-flask-app');
 ```
 
 - Then run the below commands in a seperate terminal:
