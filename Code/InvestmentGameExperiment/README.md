@@ -40,17 +40,17 @@ pip3 install -r requirements_py3.txt
 ### 3. Configure API and IP Address
 
 #### Update Gemini API Key
-In gpt/gpt_interface.py, replace:
+In line 13 of gpt/gpt_interface.py, replace:
 
 ```bash
-client = genai.Client(api_key="YOUR_API_KEY_HERE")  # Replace with your actual API key
+client = genai.Client(api_key="AIzaSyC3NHq1XSTbgtEcxo4w4in-toMicl4asig") # Replace with your actual API key
 ```
 
 #### Update Pepper IP
-Replace "xxx.xxx.x.xxx" in:
+Replace the ip address of Pepper robot in:
 
-- pepper/InvestmentGameReactions.py
-- pepper/speak.py
+- Line 159 of pepper/InvestmentGameReactions.py
+- Line 33 of pepper/speak.py
 
 With your Pepper robot’s IP address:
 
