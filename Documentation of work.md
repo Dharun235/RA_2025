@@ -434,3 +434,12 @@ if you use the motion timeline, you can create new movements (you can have each 
 - Wednesday we should try to finalise the game, see if there are any outstanding issues, and then on Thursday we will try to set it up on my computer, and on my collaborator's computer
 ---
 
+# **25/06/2025**  
+- Worked from 13 - 17.
+- Unified the calling of the game with command line like python app.py not T to input the trust, ai condition and call the app for full screen, used production level server using waitress and fixed ip port.
+- Deleted the speaking of pepper to have speaker of pc and microphone of pc to work instead and have to work on conversation for the whole game for gpt and no gpt.
+- Ilaria will develop conversation to have for non ai case for both welcome and game.
+- For AI, I have to develop the python script to run independently and has game data as well.
+- Remove progress bar and start game button at the end and add contact people after the game text instead. 
+- Check teh number of rounds at last to be 10.
+---
