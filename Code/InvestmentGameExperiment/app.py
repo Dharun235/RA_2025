@@ -2,7 +2,7 @@
 
 """
 This is a Flask web application that simulates an investment game.
-The app allows users to invest money and receive returns based on a normal distribution.    
+The app allows users to invest initial_money and receive returns based on a normal distribution.    
 
 Author: Dharunkumar Senthilkumar    
 Date: 2023-10-03
@@ -21,17 +21,17 @@ import time
 # Initialize global variables
 # These variables are used to store the state of the application and the user's data.
 # They are initialized to default values and will be updated as the user interacts with the app.
-bank = 10
+bank = 0
 person_id = 0
 round_num = 0
 investment = 0
 returned = 0
 classification = "Trustful" # Default classification is "Trustful"
-money = 0 # Default money is 0
+initial_money = 0 # Default initial_money is 0
 
 # chatgpt powered or not?
 # This variable indicates whether the app is powered by GPT or not. It can be used to control the behavior of the app based on the GPT integration.
-gpt_powered = "not"  # Default is "not", indicating the app is not powered by GPT initially.
+gpt_powered = "not"  # Default value is "not". It can be set to "yes" if the app is powered by GPT.
 
 # Prompts 
 system_prompt = f"""You're Pepper, a friendly humanoid robot created by SoftBank Robotics, here to chat, have fun, and run an engaging Investment Game experiment with humans.
@@ -109,7 +109,7 @@ prompts =  {
             User: How many rounds are there?
             Assistant: Oh, that’s a surprise! Just focus on each round and enjoy the game.
 
-            User: How much money do I have in bank and how much do I have?
+            User: How much initial_money do I have in bank and how much do I have?
             Assistant: You have 10 coins to start with. Let’s see how you can grow that!
             """ ,
     "invest": """You're the assistant prompting the user to invest. Stay neutral and encouraging. Keep responses short and clear. You can use playful language, but avoid being too casual.
@@ -155,12 +155,12 @@ prompts =  {
                 User: Did I win?
                 Assistant: There’s no winning yet—just playing smart every round!
 
-                Suppose the user lost money in this round.
-                User: I lost money!
+                Suppose the user lost initial_money in this round.
+                User: I lost initial_money!
                 Assistant: It happens! Every round is a new chance. Let’s see what you do next!
 
-                Suppose the user won money in this round.
-                User: I made money!
+                Suppose the user won initial_money in this round.
+                User: I made initial_money!
                 Assistant: Awesome! You made {returned - investment} coins this round. Keep it up!
 
                 User: How many rounds are left?
@@ -212,7 +212,7 @@ CSV_FILE = "data/results.csv"
 if not os.path.exists(CSV_FILE):
     with open(CSV_FILE, "w", newline='') as file:
         writer = csv.writer(file)
-        writer.writerow(["Person ID", "Round", "Investment", "Returned", "Classification", 'Person Money', 'Bank Money', 'GPT Powered'])
+        writer.writerow(["Person ID", "Round", "Investment", "Returned", "Classification", 'Person initial_Money', 'Bank initial_Money', 'GPT Powered'])
 
 def start_new_thread(state_name, prompt):
     global current_thread, stop_event
@@ -245,7 +245,7 @@ def gpt_communication(state_name, prompt, stop_event):
         3) Exit only if stop_event is set or user says "stop".
     """
 
-    global bank, person_id, round_num, investment, returned, classification, money, gpt_powered, conversation_history
+    global bank, person_id, round_num, investment, returned, classification, initial_money, gpt_powered, conversation_history
 
     max_retries = 2
     retry_count = 0
@@ -361,7 +361,7 @@ def gpt_communication(state_name, prompt, stop_event):
         with open(log_file_path, "a", encoding="utf-8") as f:
             f.write(f"Round: {round_num}, Bank: {bank}, Person: {person_id}, "
                     f"Invested: {investment}, Returned: {returned}, "
-                    f"Class: {classification}, Money Left: {money}, GPT: {gpt_powered}\n")
+                    f"Class: {classification}, initial_Money Left: {initial_money}, GPT: {gpt_powered}\n")
             for line in conversation:
                 f.write(line + "\n")
             f.write("\n")
@@ -458,7 +458,7 @@ def completion_page():
 def invest():
     """ Endpoint to handle investment data. """
     """ This endpoint receives investment data from the client, simulates a return amount, and saves the data to a CSV file. """
-    global bank, person_id, round_num, investment, returned, classification, money, gpt_powered
+    global bank, person_id, round_num, investment, returned, classification, initial_money, gpt_powered
     data = request.get_json()
     
     if not data:
@@ -476,15 +476,14 @@ def invest():
     classification = "Trustful" if returned >= investment else "Untrustful"
 
     # Calculate new balances
-    money = 10
-    bank += (returned - investment)
-
+    initial_money = 10
+    bank = initial_money - investment + returned
     # Save to CSV
     with open(CSV_FILE, "a", newline='') as file:
         writer = csv.writer(file)
         writer.writerow([
             person_id, round_num, investment, 
-            returned, classification, money, bank, gpt_powered
+            returned, classification, initial_money, bank, gpt_powered
         ])
 
     return jsonify({
@@ -493,7 +492,7 @@ def invest():
         "investment": investment,
         "returned": returned,
         "classification": classification,
-        "money": money,
+        "initial_money": initial_money,
         "bank": bank
     })
 
