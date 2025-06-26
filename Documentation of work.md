@@ -443,3 +443,11 @@ if you use the motion timeline, you can create new movements (you can have each 
 - Remove progress bar and start game button at the end and add contact people after the game text instead. 
 - Check teh number of rounds at last to be 10.
 ---
+
+# **26/06/2025**  
+- Worked from 13 - 17.
+- Removed progress bar adn start game button and verified round as 10 total.
+- Want to do the script for non ai - welcome and game and ai - welcome and game.
+- Want to add the people recognition and tracking.
+- Next week is display of game to students and setup of game with other PC.
+---
