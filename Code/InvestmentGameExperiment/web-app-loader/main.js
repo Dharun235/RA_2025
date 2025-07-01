@@ -23,21 +23,32 @@ function createWindow() {
     splash.loadFile('splash.html');
     splash.once('ready-to-show', () => splash.show());
 
-    // Main Window in kiosk mode
     mainWindow = new BrowserWindow({
         width: 1024,
         height: 768,
         resizable: false,
         frame: false,
-        kiosk: true,               // kiosk mode enabled
+        kiosk: true,
         autoHideMenuBar: true,
+        movable: false,
+        minimizable: false,
+        maximizable: false,
+        closable: false,
+        skipTaskbar: true,
         show: false,
         webPreferences: {
             preload: path.join(__dirname, 'preload.js')
         }
     });
 
-    mainWindow.loadURL('http://192.168.0.101:5000');
+    // Disable minimize action
+    mainWindow.on('minimize', e => e.preventDefault());
+
+    // Remove move handler if present
+    // mainWindow.on('move', () => {});  // Remove or comment this out
+
+
+    mainWindow.loadURL('http://127.0.0.1:1234');
 
     mainWindow.webContents.on('did-finish-load', () => {
         if (splash && !splash.isDestroyed()) splash.destroy();

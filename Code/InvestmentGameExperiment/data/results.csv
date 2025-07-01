@@ -1,4 +1,4 @@
-Person ID,Round,Investment,Returned,Trustful,Person Money,Bank Money,GPT Powered
+Person ID,Round,Investment,Returned,Classification,Person Money,Bank Money,GPT Powered
 1,1,100,71,Untrustful,100,71,yes
 1,2,12,9,Untrustful,100,80,yes
 1,1,2,3,Trustful,100,3,yes
@@ -113,3 +113,30 @@ Person ID,Round,Investment,Returned,Trustful,Person Money,Bank Money,GPT Powered
 1,3,7,15,Trustful,10,20,not
 2,1,3,0,Untrustful,10,7,not
 2,2,8,16,Trustful,10,15,not
+4,1,7,8,Trustful,10,11,not
+3,1,5,15,Trustful,10,20,not
+3,2,9,15,Trustful,10,26,not
+3,3,1,0,Untrustful,10,25,not
+0,1,3,2.15,Untrustful,10,9.15,not
+0,2,4,2,Untrustful,10,8,not
+1,1,3,1,Untrustful,10,12,not
+Person ID,Round,Investment,Returned,Classification,Person Money,Bank Money,GPT Powered
+2,1,5,5,Trustful,10,0,not
+2,2,6,4,Untrustful,10,2,not
+2,3,6,4,Untrustful,10,8,not
+Person ID,Round,Investment,Returned,Classification,Person Money,Bank Money,GPT Powered
+0,1,7,7,Trustful,10,10,not
+0,2,8,12,Trustful,10,14,not
+0,3,7,12,Trustful,10,15,not
+0,4,9,12,Trustful,10,28,not
+0,5,6,6,Trustful,10,38,not
+0,6,7,14,Trustful,10,55,not
+0,7,8,12,Trustful,10,69,not
+0,8,8,11,Trustful,10,82,not
+Person ID,Round,Investment,Returned,Classification,Person Money,Bank Money,GPT Powered
+2,1,3,4,Trustful,10,11,not
+2,2,3,4,Trustful,10,22,not
+Person ID,Round,Investment,Returned,Classification,Person Money,Bank Money,GPT Powered
+3,1,4,7,Trustful,10,13,not
+2,9,3,5,Trustful,10,12,not
+2,10,6,7,Trustful,10,23,not

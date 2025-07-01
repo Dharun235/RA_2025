@@ -8,9 +8,38 @@ It includes methods for different game reactions, such as starting the game, inv
 from google import genai
 import speech_recognition as sr
 import subprocess
+import pyttsx3
 
 # Client initialization for Google GenAI
 client = genai.Client(api_key="AIzaSyC3NHq1XSTbgtEcxo4w4in-toMicl4asig") # Replace with your actual API key
+
+def speak_locally(text):
+    """Speaks the given text using the system speaker in a female, casual-sounding voice."""
+    engine = pyttsx3.init()
+    
+    # Get available voices
+    voices = engine.getProperty('voices')
+    
+    # Try to pick a female voice (adjust index or check names based on your system)
+    selected_voice = None
+    for voice in voices:
+        if "female" in voice.name.lower() or "hazel" in voice.name.lower():
+            selected_voice = voice.id
+            break
+    
+    if selected_voice:
+        engine.setProperty('voice', selected_voice)
+    else:
+        print("⚠️ Could not find a female voice. Using default.")
+    
+    # Adjust speech rate for a casual tone
+    engine.setProperty('rate', 175)  # Slower is more natural (default is ~200)
+
+    # Adjust pitch via SSML if needed (optional)
+    # pyttsx3 does not support direct pitch control on Windows
+
+    engine.say(text)
+    engine.runAndWait()
 
 def get_user_message():
     """Capture audio from the microphone and return recognized text.
@@ -36,33 +65,21 @@ def get_user_message():
         print(f"❌ Could not request results; {e}")
         return ""
 
-def send_to_pepper(text):
-    """Function to send text to Pepper."""
-    """ This function uses subprocess to run a Python 2 script that sends the text to the Pepper robot. """
-    if not text:
-        print("No text to send to Pepper!")
-        return
+def conversation_to_prompt(conversation_history):
+    lines = []
+    for message in conversation_history:
+        role = "User" if message["role"] == "user" else "Gemini"
+        for part in message["parts"]:
+            lines.append(f"{role}: {part}")
+    return "\n".join(lines)
 
-    # Debugging: print what is being sent to Pepper
-    print(f"Sending to Pepper: {text}")
-
-    try:
-        # Use subprocess to run the Python 2 script with the text input
-        result = subprocess.run([r"S:/JOB/Amaneus/pepperchat/python.exe", "pepper/speak.py", text], capture_output=True, text=True)
-        print(f"Pepper's response: {result.stdout.strip()}")  # Debug line
-
-        # Optionally print stderr if there is an error
-        if result.stderr:
-            print(f"Error: {result.stderr.strip()}")
-    except Exception as e:
-        print(f"Error sending text to Pepper: {e}")
-
-def generate_response(prompt, user_message):
+def generate_response(prompt, user_message, type = "not intro"):
     """Function to generate a response using Google GenAI."""
     """ This function uses the Google GenAI client to generate a response based on the prompt and user message. """
     # Use the Google GenAI client to generate a response
+    if type != "intro":
+        user_message = conversation_to_prompt(user_message)
     response = client.models.generate_content(
     model="gemini-2.0-flash", contents=[prompt, user_message]
     )
     return response.text
-

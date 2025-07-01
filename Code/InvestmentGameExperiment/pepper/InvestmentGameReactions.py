@@ -20,8 +20,6 @@ import sys
 import basic_movements as bm    
 import time
 
-gpt_powered = "not"
-
 class InvestmentGameReactions:
     def __init__(self, robot_ip, port=9559):
         # Initialize proxies for Pepper's modules
@@ -33,6 +31,7 @@ class InvestmentGameReactions:
         self.behavior_manager = ALProxy("ALBehaviorManager", robot_ip, port)
         self.autonomous_life = ALProxy("ALAutonomousLife", robot_ip, port)
         self.posture = ALProxy("ALRobotPosture", robot_ip, port)
+        self.awareness = ALProxy("ALBasicAwareness", robot_ip, port)
 
     def reset_state(self):
         try:
@@ -66,11 +65,16 @@ class InvestmentGameReactions:
             print "[Reset] LED reset failed: {}".format(str(e))
 
         #try:
-        #    desired_state = "interactive" if gpt_powered == "yes" else "solitary"
+        #    desired_state = "solitary" # or "interactive"
         #    if self.autonomous_life.getState() != desired_state:
         #       self.autonomous_life.setState(desired_state)
         #except RuntimeError as e:
         #    print "[Start] Autonomous Life state error: {}".format(str(e))
+        
+        
+        current_mode = self.awareness.getTrackingMode()
+        if current_mode != "Move":
+            self.awareness.setTrackingMode("Move")
 
 
     def start_game_reaction(self):
@@ -79,7 +83,7 @@ class InvestmentGameReactions:
         try:
             self.leds.fadeRGB("FaceLeds", 0x00FF00, 0.5)
             self.behavior_manager.runBehavior("dialog_move/animations/Nao/Standing/Wave01")
-            self.tts.say("Welcome to the investment game! Get ready to make some smart moves!")
+            #self.tts.say("Welcome to the investment game! Get ready to make some smart moves!")
         except Exception as e:
             print "[Start] Action error: {}".format(str(e))
 
@@ -90,7 +94,7 @@ class InvestmentGameReactions:
             bm.head_nod()
             time.sleep(0.3)
             self.leds.fadeRGB("FaceLeds", 0xFFFF00, 0.5)
-            self.tts.say("You will invest wisely. Let's hope it pays off!")
+            #self.tts.say("You will invest wisely. Let's hope it pays off!")
         except Exception as e:
             print "[Invest] Error: {}".format(str(e))
 
@@ -129,7 +133,7 @@ class InvestmentGameReactions:
 
         reaction = reactions[outcome]
         try:
-            self.tts.say(reaction["text"])
+            #self.tts.say(reaction["text"])
             time.sleep(0.2)
             self.leds.fadeRGB("FaceLeds", reaction["color"], 0.5)
 

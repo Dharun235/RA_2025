@@ -88,19 +88,6 @@ function nextRound() {
     window.location.href = `/invest_page?person_id=${encodeURIComponent(personId)}&round=${round}&money=${money}`;
 }
 
-function updateProgressBar() {
-    const progressBar = document.getElementById('progressBar');
-    const progressText = document.getElementById('progressText');
-    
-    // Calculate the percentage
-    const percentage = Math.round((round / 10) * 100);
-    
-    // Update the progress bar value and text
-    progressBar.value = percentage;
-    progressText.textContent = `Round ${round} of 10 - ${percentage}%`;
-}
-
-
 // Initialize page based on current URL
 function initPage() {
     const params = new URLSearchParams(window.location.search);

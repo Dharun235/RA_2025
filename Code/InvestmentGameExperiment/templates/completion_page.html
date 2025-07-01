@@ -23,15 +23,12 @@
                 <span class="label"><i class="fas fa-coins"></i> Final Bank Total:</span>
                 <span id="final-bank">{{ final_bank }}</span>
             </div>
- 
-        <div class="result-item">
-            <span class="label"><i class="fas fa-list-ol"></i> Rounds Completed:</span>
-            <span class="value">{{ final_round }}</span>
+
+            <!-- Replaced return button with message -->
+            <div class="contact-message">
+                <p><i class="fas fa-info-circle"></i> The game is now over. Please contact the staff for further instructions.</p>
+            </div>
         </div>
-            
-        <button onclick="window.location.href='/'">
-            <i class="fas fa-home"></i> Return to Start
-        </button>
     </div>
     
     <div id="celebration" class="celebration"></div>
