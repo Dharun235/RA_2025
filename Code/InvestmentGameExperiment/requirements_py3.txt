@@ -3,5 +3,6 @@ flask-cors
 numpy
 SpeechRecognition
 google
+google
 waitress
 pyttsx3
