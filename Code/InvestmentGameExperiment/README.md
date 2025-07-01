@@ -6,7 +6,7 @@ This project sets up an autonomous Investment Game experiment involving a web in
 The project directory is organized as follows:
 
 - **`InvestmentGameExperiment/`**
-  - **`data/`**: Contains the CSV file `results.csv` which stores the values of various variables like participant ID, money, GPT-powered, etc and `conversation.txt` which contains the conversations between the user and gemini transcribed.
+  - **`data/`**: Contains the CSV file `game.csv` which stores the values of various variables like participant ID, money, GPT-powered, etc and `conversation_log_intro.txt`, `conversation_log_game.txt` which contains the conversations between the user and gemini transcribed during the introduction and the game, respectively.
   - **`gpt/gpt_interface.py`**: Contains the scripts relevant to the conversation with Gemini AI model.
   - **`pepper/`**: Contains NAOQI-powered Python 2 scripts handling TTS and movement of the Pepper robot based on the current state.
   - **`static/`**: Contains JS and CSS files that manage the backend and styling of the web application.
@@ -15,8 +15,11 @@ The project directory is organized as follows:
   - **`web-app-loader`**: Electron based app to run the website as an app in full-screen kiosk mode.
   - **`utils`**: Functions used for general purposes across the code environment.
   - **`app.py`**: Main script containing the code for the flask based app and user-Gemini communication.
-  - **`requirements_py3.txt`**: Requirements file for Python 3 dependencies.
+  - **`intro_ai.py`**: Script for ai based conversation during introduction.
+  - **`intro_non_ai.py`**: Script for non-ai based conversation during introduction.
   - **`README.md`**: The main README file.
+  - **`requirements_py3.txt`**: Requirements file for Python 3 dependencies.
+  
 
 ## ⚙️ Setup and Usage
 
@@ -110,6 +113,12 @@ cd web-app-loader
 npm start
 ```
 
+## Logging of data
+You can check the conversations between "Participant" and "Pepper" in the following files- 
+- data/conversation_log_game.txt - Conversations between "Participant" and "Pepper" during the game.
+- data/conversation_log_intro.txt - Conversations between "Participant" and "Pepper" during the introduction.
+
+You can check the various game related data such as bank amount, round number, etc in the data/game_data.csv.
 ## Maintainer
 
 Dharunkumar Senthilkumar
