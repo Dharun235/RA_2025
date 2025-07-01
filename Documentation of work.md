@@ -451,3 +451,12 @@ if you use the motion timeline, you can create new movements (you can have each 
 - Want to add the people recognition and tracking.
 - Next week is display of game to students and setup of game with other PC.
 ---
+
+# **01/07/2025**  
+- Worked from 9-14.
+- Updated the conversation log of intro and game conversation to be more readable.
+- conversation during the game is set to be present and no previous conversations given to the model.
+- intro and game convo for ai and non ai updated accordingly
+- requriements file updated with missing libraries to install
+- Tomorrow test the game setup and install in both Ilaria and UK prof pc to work properly.
+---
