@@ -50,7 +50,6 @@ client = genai.Client(api_key="AIzaSyC3NHq1XSTbgtEcxo4w4in-toMicl4asig") # Repla
 Replace the ip address of Pepper robot in:
 
 - Line 159 of pepper/InvestmentGameReactions.py
-- Line 33 of pepper/speak.py
 
 With your Pepper robot’s IP address:
 
@@ -58,23 +57,36 @@ With your Pepper robot’s IP address:
 PEPPER_IP = "xxx.xxx.x.xxx"  # Replace with your Pepper's IP address
 ```
 
-#### Update the AI/ Non AI and Trust or Untrust conditions 
-Change the line 34 in app.py to "not" or "yes" to set no AI and AI condition and line 18 in utils/utils_func.py to "T" or "U" to set to trustworthy or untrustworthy condition.
-
-- Line 34 of app.py
-```bash 
-gpt_powered = "not"  # Default value is "not". It can be set to "yes" if the app is powered by GPT.
-```
-
-- Line 18 in utils/utils_func.py
-```bash
-trust = 'U' # T for trustworthy, U for untrustworthy
-```
-
 ### 4. Run the Application
 
+- For introduction conversation with non-ai setup, run the following commands
 ```bash
-python app.py
+python intro_non_ai.py
+```
+
+- For introduction conversation with ai setup, run the following commands
+```bash
+python intro_ai.py
+```
+
+- For AI and Trustworthy condition, run the setup as below
+```bash
+python app.py yes T
+```
+
+- For AI and untrustworthy condition, run the setup as below
+```bash
+python app.py yes U
+```
+
+- For non-AI and Trustworthy condition, run the setup as below
+```bash
+python app.py not T
+```
+
+- For AI and untrustworthy condition, run the setup as below
+```bash
+python app.py not U
 ```
 
 ### 5. Open Web Interface
