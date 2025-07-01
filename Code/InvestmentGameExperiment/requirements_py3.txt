@@ -2,5 +2,6 @@ flask
 flask-cors
 numpy
 SpeechRecognition
-google-generativeai
+google
 waitress
+pyttsx3
