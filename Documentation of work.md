@@ -419,9 +419,35 @@ if you use the motion timeline, you can create new movements (you can have each 
 - Had to make the unified gpt instead of creating and deleting threads.
 ---
 
-# **10/06/2025**  
-- Worked from 13 - 17.
+# **18/06/2025**  
+- Worked from 9 - 14.
 - Solved the problem of kiosk and loading page using electron, making the setup easier.
 - Old code without autonomous life is used even though it has delay as the problem of loading is solved.
 - GPT and README file has to be optimized.
+---
+
+# **19/06/2025**  
+- Worked from 13 - 17.
+- Stored the web-app-loader in google drive for downloading.
+- Need to have a parameter based game to input the game type of AI/ Non AI and Trustworthy/ Untrustworthy for the whole game at the start.
+- Optimize the GPT for the whole game such that it talks only when the user havent responded for a long time for conversation as there are already default dialogues delivered by the robot.
+- Wednesday we should try to finalise the game, see if there are any outstanding issues, and then on Thursday we will try to set it up on my computer, and on my collaborator's computer
+---
+
+# **25/06/2025**  
+- Worked from 13 - 17.
+- Unified the calling of the game with command line like python app.py not T to input the trust, ai condition and call the app for full screen, used production level server using waitress and fixed ip port.
+- Deleted the speaking of pepper to have speaker of pc and microphone of pc to work instead and have to work on conversation for the whole game for gpt and no gpt.
+- Ilaria will develop conversation to have for non ai case for both welcome and game.
+- For AI, I have to develop the python script to run independently and has game data as well.
+- Remove progress bar and start game button at the end and add contact people after the game text instead. 
+- Check teh number of rounds at last to be 10.
+---
+
+# **26/06/2025**  
+- Worked from 13 - 17.
+- Removed progress bar adn start game button and verified round as 10 total.
+- Want to do the script for non ai - welcome and game and ai - welcome and game.
+- Want to add the people recognition and tracking.
+- Next week is display of game to students and setup of game with other PC.
 ---
