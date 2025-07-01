@@ -64,12 +64,20 @@ PEPPER_IP = "xxx.xxx.x.xxx"  # Replace with your Pepper's IP address
 
 - For introduction conversation with non-ai setup, run the following commands
 ```bash
-python intro_non_ai.py
+python intro_non_ai.py {Person_ID}
+```
+For example, if the participant ID is 1, the command is as follows 
+```bash
+python intro_non_ai.py 1
 ```
 
 - For introduction conversation with ai setup, run the following commands
 ```bash
-python intro_ai.py
+python intro_ai.py {Person_ID}
+```
+For example, if the participant ID is 1, the command is as follows 
+```bash
+python intro_ai.py 1
 ```
 
 - For AI and Trustworthy condition, run the setup as below

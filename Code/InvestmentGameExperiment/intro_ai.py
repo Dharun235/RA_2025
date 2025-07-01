@@ -1,9 +1,10 @@
-import time, subprocess
+import time, subprocess, sys
 from gpt.gpt_interface import get_user_message, speak_locally, generate_response   
 
 # Interrupt prompt if user stays silent for 15 seconds
 INTERRUPT_PROMPT = "Hey, are you still there? Do you want to continue our conversation."
 MAX_SILENT_ATTEMPTS = 10
+PERSON_ID = sys.argv[1]  
 
 subprocess.run([r"S:\JOB\Amaneus\pepperchat\python.exe", r"S:\JOB\Amaneus\RA_2025\Code\InvestmentGameExperiment\pepper\InvestmentGameReactions.py", f"start"])
     
@@ -77,6 +78,15 @@ SYSTEM_PROMPT =  f"""You're Pepper, a friendly humanoid robot created by SoftBan
     Assistant: I run on NAOqi OS, which is like my brain. It helps me move, talk, and interact with you. And I’m powered by Gemini for smart conversations! I'm programmed using python, which is a great language for robots like me.
     """
 
+
+def log_conversation(user_message, pepper_response, log_file=r"S:\JOB\Amaneus\RA_2025\Code\InvestmentGameExperiment\data\conversation_log_intro.txt"):
+    global PERSON_ID
+    with open(log_file, "a", encoding="utf-8") as f:
+        f.write(f"INTRODUCTION AI CONVERSATION LOG: Participant ID - {PERSON_ID}\n")
+        f.write(f"User: {user_message}\n")
+        f.write(f"Pepper: {pepper_response}\n")
+        f.write("-" * 50 + "\n")
+
 def main():
     global SYSTEM_PROMPT, INTERRUPT_PROMPT
 
@@ -84,14 +94,13 @@ def main():
     total_conversations = 0  # Counter for total conversations 
 
     # Opening line
-    opening_line =  """Hello, my name is Pepper! I was developed by a French and Japanese robotic
-                        company, and I’m one of the most widely used social robots. I was built to interact
-                        with humans in simple ways, and my conversational skills are still limited. Today, we
-                        will play a so-called “investment game” together. Would you like to hear more about
-                        me, or should I tell you more about the game?"""
+    opening_line =  """Hello, my name is Pepper! I was developed by a French and Japanese robotic company, and I’m one of the most widely used social robots.
+      I was built to interact with humans in simple ways, and my conversational skills are still limited. 
+      Today, we will play a so-called “investment game” together. Would you like to hear more about me, or should I tell you more about the game?"""
     
     print(f"Gemini starts: {opening_line}")
     speak_locally(opening_line)
+    log_conversation("No Input - Start of the conversation", opening_line)
 
     while True:
         print("\n🎧 Listening for your message...")
@@ -110,11 +119,13 @@ def main():
 
             print(f"🤖 Pepper says: {pepper_response}")
             speak_locally(pepper_response)
+            log_conversation(user_message, pepper_response)
 
             if total_conversations >= 7:  # condition to end the conversation
                 print("Ending conversation after 5 interactions.")
                 speak_locally("""Now, feel free to ask the researcher about anything that might be unclear. I will
                          see you back here in a few minutes, and we will play the game!""")
+                log_conversation(user_message, pepper_response)
                 break
             
         else:
@@ -124,6 +135,7 @@ def main():
             if silent_attempts >= MAX_SILENT_ATTEMPTS:
                 speak_locally(INTERRUPT_PROMPT)
                 print(f"⚠️ Interrupt prompt: {INTERRUPT_PROMPT}")
+                log_conversation("No input detected", INTERRUPT_PROMPT)
                 silent_attempts = 0  # Optionally reset after prompting
 
             time.sleep(1)  # Small delay before retrying

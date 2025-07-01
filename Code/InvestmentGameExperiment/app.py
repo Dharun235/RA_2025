@@ -67,7 +67,7 @@ non_ai_dialogues = [
 
 # CSV file path
 # This file is used to store the results of the investment rounds. Each row in the CSV file corresponds to a round of investment and contains the relevant data.
-CSV_FILE = "data/results.csv"    
+CSV_FILE = "data\game_data.csv"    
 
 # Create CSV file with headers if it doesn't exist
 if not os.path.exists(CSV_FILE):

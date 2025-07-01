@@ -1,7 +1,13 @@
 import time, subprocess, sys, os
-from gpt.gpt_interface import get_user_message, speak_locally, generate_response   
+from gpt_interface import get_user_message, speak_locally, generate_response   
 
 import csv
+
+person_id = 0
+round_num = 0
+invested = 0
+returned = 0
+bank_money = 0
 
 def extract_game_info_from_end(csv_path):
     stop_row = ['Person ID', 'Round', 'Investment', 'Returned',
@@ -21,6 +27,7 @@ def extract_game_info_from_end(csv_path):
         if len(cleaned) >= 7:
             try:
                 # Extract required fields from the row
+                person_id = int(cleaned[0])
                 round_num = int(cleaned[1])
                 invested = float(cleaned[2])
                 returned = float(cleaned[3])
@@ -31,8 +38,13 @@ def extract_game_info_from_end(csv_path):
 
     return None, None, None, None  # In case no valid row is found
 
-def log_conversation(user_message, pepper_response, log_file="data/conversation_log.txt"):
+def log_conversation(user_message, pepper_response, log_file=r"S:\JOB\Amaneus\RA_2025\Code\InvestmentGameExperiment\data\conversation_log_game.txt"):
+    global gpt_powered, person_id, round_num
     with open(log_file, "a", encoding="utf-8") as f:
+        if gpt_powered == "yes":
+            f.write(f"GAME - AI CONVERSATION LOG: Participant ID - {person_id}, Round number - {round_num} \n")
+        else:
+            f.write(f"GAME - NON AI CONVERSATION LOG: Participant ID - {person_id}, Round number - {round_num}\n")
         f.write(f"User: {user_message}\n")
         f.write(f"Pepper: {pepper_response}\n")
         f.write("-" * 50 + "\n")
@@ -48,25 +60,24 @@ gpt_powered = sys.argv[1]
 subprocess.run([r"S:\JOB\Amaneus\pepperchat\python.exe", r"S:\JOB\Amaneus\RA_2025\Code\InvestmentGameExperiment\pepper\InvestmentGameReactions.py", f"start"])
     
 def main():
-    global SYSTEM_PROMPT, INTERRUPT_PROMPT
+    global SYSTEM_PROMPT, INTERRUPT_PROMPT, person_id, gpt_powered, round_num, invested, returned, bank_money
 
     silent_attempts = 0  # Counter for silent responses
     total_conversations = 0  # Counter for total conversations 
 
     # Opening line
-    opening_line =  """Hello, my name is Pepper! I was developed by a French and Japanese robotic
-                        company, and I’m one of the most widely used social robots. I was built to interact
-                        with humans in simple ways, and my conversational skills are still limited. Today, we
-                        will play a so-called “investment game” together. Would you like to hear more about
-                        me, or should I tell you more about the game?"""
+    opening_line =  """Hello, my name is Pepper! I was developed by a French and Japanese robotic company, and I’m one of the most widely used social robots. 
+    I was built to interact with humans in simple ways, and my conversational skills are still limited. 
+    Today, we will play a so-called “investment game” together. Would you like to hear more about me, or should I tell you more about the game?"""
     
     print(f"Gemini starts: {opening_line}")
     speak_locally(opening_line)
+    log_conversation("No Input - Start of the conversation", opening_line)
 
     while True:
 
         # Game data extraction
-        round_num, invested, returned, bank = extract_game_info_from_end("data/game_data.csv")
+        round_num, invested, returned, bank = extract_game_info_from_end(r"data\game_data.csv")
 
         if gpt_powered == "yes":
 
@@ -219,6 +230,7 @@ def main():
 
             print(f"🤖 Pepper says: {pepper_response}")
             speak_locally(pepper_response)
+            log_conversation(user_message, pepper_response)
 
         else:
             silent_attempts += 1
@@ -228,6 +240,7 @@ def main():
                 speak_locally(INTERRUPT_PROMPT)
                 print(f"⚠️ Interrupt prompt: {INTERRUPT_PROMPT}")
                 silent_attempts = 0  # Optionally reset after prompting
+                log_conversation("No input detected", INTERRUPT_PROMPT)
 
             time.sleep(1)  # Small delay before retrying
     
