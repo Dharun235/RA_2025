@@ -24,8 +24,10 @@ The project directory is organized as follows:
 ## ⚙️ Setup and Usage
 
 ### 1. Clone the Repository
+```bash
 git clone https://github.com/Dharun235/RA_2025.git
 cd RA_2025/Code/InvestmentGameExperiment
+```
 
 ### 2. Install Dependencies
 Choose the appropriate Python version and follow the below instructions:
