@@ -104,27 +104,6 @@ python app.py not T
 python app.py not U
 ```
 
-### 5. Open Web Interface
-
-#### Run Electron App
-
-- Due to size limitations, please download the full `web-app-loader` folder from this link:
-https://drive.google.com/drive/folders/1EKmt6cJFKGBHKUP-uFWhS5jRvawCBC-D?usp=sharing 
-
-- Place the `web-app-loader` into the root folder.
-- Change the url of line 40 of web-app-loader/main.js to the url provided by the flask app. The line is given below.
-    
-```bash
-mainWindow.loadURL('http://url-provided-by-flask-app');
-```
-
-- Then run the below commands in a seperate terminal:
-
-```bash
-cd web-app-loader
-npm start
-```
-
 ## Logging of data
 You can check the conversations between "Participant" and "Pepper" in the following files- 
 - data/conversation_log_game.txt - Conversations between "Participant" and "Pepper" during the game.
