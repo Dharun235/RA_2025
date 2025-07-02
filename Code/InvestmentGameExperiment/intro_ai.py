@@ -6,7 +6,7 @@ INTERRUPT_PROMPT = "Hey, are you still there? Do you want to continue our conver
 MAX_SILENT_ATTEMPTS = 10
 PERSON_ID = sys.argv[1]  
 
-subprocess.run([r"S:\JOB\Amaneus\pepperchat\python.exe", r"S:\JOB\Amaneus\RA_2025\Code\InvestmentGameExperiment\pepper\InvestmentGameReactions.py", f"start"])
+subprocess.run([r"pepper\python.exe", r"pepper\InvestmentGameReactions.py", f"start"])
     
 # Prompt examples for Pepper robot
 SYSTEM_PROMPT =  f"""You're Pepper, a friendly humanoid robot created by SoftBank Robotics, here to chat, have fun, and run an engaging Investment Game experiment with humans.
@@ -79,7 +79,7 @@ SYSTEM_PROMPT =  f"""You're Pepper, a friendly humanoid robot created by SoftBan
     """
 
 
-def log_conversation(user_message, pepper_response, log_file=r"S:\JOB\Amaneus\RA_2025\Code\InvestmentGameExperiment\data\conversation_log_intro.txt"):
+def log_conversation(user_message, pepper_response, log_file=r"data\conversation_log_intro.txt"):
     global PERSON_ID
     with open(log_file, "a", encoding="utf-8") as f:
         f.write(f"INTRODUCTION AI CONVERSATION LOG: Participant ID - {PERSON_ID}\n")

@@ -27,6 +27,7 @@ classification = "Trustful" # Default classification is "Trustful"
 initial_money = 0 # Default initial_money is 0
 gpt_powered = sys.argv[1]  # Default value is "not". It can be set to "yes" if the app is powered by GPT.
 trust = sys.argv[2]  # Default trust value is 'T' (Trustworthy)
+PYTHON2_PATH = r"pepper\python.exe"  # Path to the Python executable
 
 # Global variables for threading and stopping
 current_thread = None
@@ -107,7 +108,7 @@ def normal_random(investment):
 def index():    
     """ Main page of the app. """
 
-    subprocess.run([r"S:\JOB\Amaneus\pepperchat\python.exe", r"S:\JOB\Amaneus\RA_2025\Code\InvestmentGameExperiment\pepper\InvestmentGameReactions.py", f"start"])
+    subprocess.run([PYTHON2_PATH, r"pepper\InvestmentGameReactions.py", f"start"])
     
     return render_template('index.html')
 
@@ -118,7 +119,7 @@ def invest_page():
     
     if gpt_powered == "not":
         speak_locally(random.choice(non_ai_dialogues))
-    subprocess.run([r"S:\JOB\Amaneus\pepperchat\python.exe", r"S:\JOB\Amaneus\RA_2025\Code\InvestmentGameExperiment\pepper\InvestmentGameReactions.py", f"invest"])
+    subprocess.run([PYTHON2_PATH, r"pepper\InvestmentGameReactions.py", f"invest"])
     
     return render_template('invest_page.html')
 
@@ -126,7 +127,7 @@ def invest_page():
 def thinking_page():
     """ Thinking page of the app. """
 
-    subprocess.run([r"S:\JOB\Amaneus\pepperchat\python.exe", r"S:\JOB\Amaneus\RA_2025\Code\InvestmentGameExperiment\pepper\InvestmentGameReactions.py", f"think"])
+    subprocess.run([PYTHON2_PATH, r"pepper\InvestmentGameReactions.py", f"think"])
     
     return render_template('thinking_page.html')
 
@@ -142,8 +143,8 @@ def results_page():
         last_behavior_call = now
         status = "w" if classification == "Trustful" else "l"
         subprocess.run([
-            r"S:\JOB\Amaneus\pepperchat\python.exe",
-            r"S:\JOB\Amaneus\RA_2025\Code\InvestmentGameExperiment\pepper\InvestmentGameReactions.py",
+            PYTHON2_PATH,
+            r"pepper\InvestmentGameReactions.py",
             f"r{status}"
         ])
 
@@ -160,7 +161,7 @@ def completion_page():
     """ Completion page of the app. """
     global bank, round_num
 
-    subprocess.run([r"S:\JOB\Amaneus\pepperchat\python.exe", r"S:\JOB\Amaneus\RA_2025\Code\InvestmentGameExperiment\pepper\InvestmentGameReactions.py", f"final"])
+    subprocess.run([PYTHON2_PATH, r"pepper\InvestmentGameReactions.py", f"final"])
 
     bank = 0
     return render_template('completion_page.html', final_bank=bank, final_round=round_num)
@@ -225,7 +226,7 @@ if __name__ == '__main__':
     """ Main function to run the Flask app. """
     """ This function initializes the Flask app and the GPT communication thread. """
 
-    subprocess.run(["python","S:\JOB\Amaneus\RA_2025\Code\InvestmentGameExperiment\gpt\conversation_loop.py", gpt_powered])
+    subprocess.run(["python","gpt\conversation_loop.py", gpt_powered])
 
     # Start the Flask app
     threading.Thread(target=run_flask).start()

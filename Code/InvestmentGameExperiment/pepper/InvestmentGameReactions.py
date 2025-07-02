@@ -31,7 +31,7 @@ class InvestmentGameReactions:
         self.behavior_manager = ALProxy("ALBehaviorManager", robot_ip, port)
         self.autonomous_life = ALProxy("ALAutonomousLife", robot_ip, port)
         self.posture = ALProxy("ALRobotPosture", robot_ip, port)
-        self.awareness = ALProxy("ALBasicAwareness", robot_ip, port)
+        self.reset_state()
 
     def reset_state(self):
         try:
@@ -65,16 +65,11 @@ class InvestmentGameReactions:
             print "[Reset] LED reset failed: {}".format(str(e))
 
         try:
-            desired_state = "solitary" # or "interactive"
+            desired_state = "solitary" # or "interactive" or "disabled" or "safeguard" or "solitary"
             if self.autonomous_life.getState() != desired_state:
                self.autonomous_life.setState(desired_state)
         except RuntimeError as e:
             print "[Start] Autonomous Life state error: {}".format(str(e))
-        
-        
-        current_mode = self.awareness.getTrackingMode()
-        if current_mode != "Move":
-            self.awareness.setTrackingMode("Move")
 
 
     def start_game_reaction(self):

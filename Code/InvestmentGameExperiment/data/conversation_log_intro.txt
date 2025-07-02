@@ -82,3 +82,39 @@ Pepper: Hello, my name is Pepper! I was developed by a French and Japanese robot
       I was built to interact with humans in simple ways, and my conversational skills are still limited. 
       Today, we will play a so-called “investment game” together. Would you like to hear more about me, or should I tell you more about the game?
 --------------------------------------------------
+INTRODUCTION NON AI CONVERSATION LOG: Participant ID - 1
+User: No Input - Start of the conversation
+Pepper: Hello, my name is Pepper! I was developed by a French and Japanese robotic company, and I’m one of the most widely used social robots. 
+                    I was built to interact with humans in simple ways, and my conversational skills are still limited. 
+                    Today, we will play a so-called “investment game” together. 
+                    Would you like to hear more about me, or should I tell you more about the game?
+                        Option 1: robot
+                        Option 2: game 
+--------------------------------------------------
+INTRODUCTION NON AI CONVERSATION LOG: Participant ID - 1
+User: No Input - Start of the conversation
+Pepper: Hello, my name is Pepper! I was developed by a French and Japanese robotic company, and I’m one of the most widely used social robots. 
+                    I was built to interact with humans in simple ways, and my conversational skills are still limited. 
+                    Today, we will play a so-called “investment game” together. 
+                    Would you like to hear more about me, or should I tell you more about the game?
+                        Option 1: robot
+                        Option 2: game 
+--------------------------------------------------
+INTRODUCTION NON AI CONVERSATION LOG: Participant ID - 1
+User: No Input - Start of the conversation
+Pepper: Hello, my name is Pepper! I was developed by a French and Japanese robotic company, and I’m one of the most widely used social robots. 
+                    I was built to interact with humans in simple ways, and my conversational skills are still limited. 
+                    Today, we will play a so-called “investment game” together. 
+                    Would you like to hear more about me, or should I tell you more about the game?
+                        Option 1: robot
+                        Option 2: game 
+--------------------------------------------------
+INTRODUCTION NON AI CONVERSATION LOG: Participant ID - 1
+User: No Input - Start of the conversation
+Pepper: Hello, my name is Pepper! I was developed by a French and Japanese robotic company, and I’m one of the most widely used social robots. 
+                    I was built to interact with humans in simple ways, and my conversational skills are still limited. 
+                    Today, we will play a so-called “investment game” together. 
+                    Would you like to hear more about me, or should I tell you more about the game?
+                        Option 1: robot
+                        Option 2: game 
+--------------------------------------------------

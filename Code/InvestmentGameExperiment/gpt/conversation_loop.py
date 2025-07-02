@@ -38,7 +38,7 @@ def extract_game_info_from_end(csv_path):
 
     return None, None, None, None  # In case no valid row is found
 
-def log_conversation(user_message, pepper_response, log_file=r"S:\JOB\Amaneus\RA_2025\Code\InvestmentGameExperiment\data\conversation_log_game.txt"):
+def log_conversation(user_message, pepper_response, log_file=r"data\conversation_log_game.txt"):
     global gpt_powered, person_id, round_num
     with open(log_file, "a", encoding="utf-8") as f:
         if gpt_powered == "yes":
@@ -57,7 +57,7 @@ MAX_SILENT_ATTEMPTS = 10
 gpt_powered = sys.argv[1]  
 
 # Start the Pepper robot reactions script
-subprocess.run([r"S:\JOB\Amaneus\pepperchat\python.exe", r"S:\JOB\Amaneus\RA_2025\Code\InvestmentGameExperiment\pepper\InvestmentGameReactions.py", f"start"])
+subprocess.run([r"pepper\python.exe", r"pepper\InvestmentGameReactions.py", f"start"])
     
 def main():
     global SYSTEM_PROMPT, INTERRUPT_PROMPT, person_id, gpt_powered, round_num, invested, returned, bank_money
