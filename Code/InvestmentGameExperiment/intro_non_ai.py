@@ -6,7 +6,7 @@ INTERRUPT_PROMPT = "Hey, are you still there? Do you want to continue our conver
 MAX_SILENT_ATTEMPTS = 10
 PERSON_ID = sys.argv[1]
 
-subprocess.run([r"pepper\python.exe", r"pepper\InvestmentGameReactions.py", f"start"])
+subprocess.run([r"pepper/python.exe", r"pepper/InvestmentGameReactions.py", f"start"])
     
 # Dialogues for Pepper robot
 pepper_dialogues = {"Intro": """Hello, my name is Pepper! I was developed by a French and Japanese robotic company, and I’m one of the most widely used social robots. 
@@ -38,7 +38,7 @@ pepper_dialogues = {"Intro": """Hello, my name is Pepper! I was developed by a F
                     I will see you back here in a few minutes, and we will play the game!"""}
 
 
-def log_conversation(user_message, pepper_response, log_file=r"data\conversation_log_intro.txt"):
+def log_conversation(user_message, pepper_response, log_file=r"data/conversation_log_intro.txt"):
     global PERSON_ID
     with open(log_file, "a", encoding="utf-8") as f:
         f.write(f"INTRODUCTION NON AI CONVERSATION LOG: Participant ID - {PERSON_ID}\n")
