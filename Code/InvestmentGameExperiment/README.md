@@ -64,6 +64,8 @@ PEPPER_IP = "xxx.xxx.x.xxx"  # Replace with your Pepper's IP address
 
 ### 4. Run the Application
 
+- Connect to the same router as the pepper robot.
+
 - For introduction conversation with non-ai setup, run the following commands
 ```bash
 python intro_non_ai.py {Person_ID}
