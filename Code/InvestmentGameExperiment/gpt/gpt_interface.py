@@ -5,7 +5,7 @@ It uses the ALProxy class from the naoqi module to connect to Pepper's TTS syste
 It initializes the TTS proxy with the IP address and port of Pepper's TTS system. 
 It includes methods for different game reactions, such as starting the game, investing, thinking, and showing results."""
 
-from google import genai
+from google import google-genai as genai
 import speech_recognition as sr
 import subprocess
 import pyttsx3
