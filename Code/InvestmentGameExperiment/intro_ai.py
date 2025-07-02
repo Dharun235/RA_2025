@@ -6,7 +6,7 @@ INTERRUPT_PROMPT = "Hey, are you still there? Do you want to continue our conver
 MAX_SILENT_ATTEMPTS = 10
 PERSON_ID = sys.argv[1]  
 
-subprocess.run([r"pepper/python.exe", r"pepper/InvestmentGameReactions.py", f"start"])
+subprocess.run([r"python2", r"pepper/InvestmentGameReactions.py", f"start"])
     
 # Prompt examples for Pepper robot
 SYSTEM_PROMPT =  f"""You're Pepper, a friendly humanoid robot created by SoftBank Robotics, here to chat, have fun, and run an engaging Investment Game experiment with humans.

@@ -27,7 +27,7 @@ classification = "Trustful" # Default classification is "Trustful"
 initial_money = 0 # Default initial_money is 0
 gpt_powered = sys.argv[1]  # Default value is "not". It can be set to "yes" if the app is powered by GPT.
 trust = sys.argv[2]  # Default trust value is 'T' (Trustworthy)
-PYTHON2_PATH = r"pepper/python.exe"  # Path to the Python executable
+PYTHON2_PATH = r"python2"  # Path to the Python executable
 
 # Global variables for threading and stopping
 current_thread = None

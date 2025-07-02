@@ -57,7 +57,7 @@ MAX_SILENT_ATTEMPTS = 10
 gpt_powered = sys.argv[1]  
 
 # Start the Pepper robot reactions script
-subprocess.run([r"pepper/python.exe", r"pepper/InvestmentGameReactions.py", f"start"])
+subprocess.run([r"python2", r"pepper/InvestmentGameReactions.py", f"start"])
     
 def main():
     global SYSTEM_PROMPT, INTERRUPT_PROMPT, person_id, gpt_powered, round_num, invested, returned, bank_money
