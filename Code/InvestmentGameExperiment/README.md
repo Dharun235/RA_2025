@@ -62,6 +62,18 @@ With your Pepper robot’s IP address:
 PEPPER_IP = "xxx.xxx.x.xxx"  # Replace with your Pepper's IP address
 ```
 
+#### Update the python2 path
+Update the PYTHON2_PATH in the files app.py, intro_ai.py, intro_non_ai.py and conversation_loop.py according to different OS
+
+- For windows, update the PYTHON2_PATH as below
+```bash
+PYTHON2_PATH = r"pepper\python.exe"
+```
+- For Ubuntu, update the PYTHON2_PATH as below
+```bash
+PYTHON2_PATH = "python2"
+```
+
 ### 4. Run the Application
 
 - Connect to the same router as the pepper robot.
@@ -104,33 +116,13 @@ python app.py not T
 python app.py not U
 ```
 
-### 5. Open Web Interface
-
-#### Run Electron App
-
-- Due to size limitations, please download the full `web-app-loader` folder from this link:
-https://drive.google.com/drive/folders/1EKmt6cJFKGBHKUP-uFWhS5jRvawCBC-D?usp=sharing 
-
-- Place the `web-app-loader` into the root folder.
-- Change the url of line 40 of web-app-loader/main.js to the url provided by the flask app. The line is given below.
-    
-```bash
-mainWindow.loadURL('http://url-provided-by-flask-app');
-```
-
-- Then run the below commands in a seperate terminal:
-
-```bash
-cd web-app-loader
-npm start
-```
-
 ## Logging of data
-You can check the conversations between "Participant" and "Pepper" in the following files- 
+You can check the conversations between "Participant" and "Pepper" in the following files
 - data/conversation_log_game.txt - Conversations between "Participant" and "Pepper" during the game.
 - data/conversation_log_intro.txt - Conversations between "Participant" and "Pepper" during the introduction.
 
 You can check the various game related data such as bank amount, round number, etc in the data/game_data.csv.
+
 ## Maintainer
 
 Dharunkumar Senthilkumar

@@ -1,4 +1,3 @@
---------------------------------------------------
 INTRODUCTION NON AI CONVERSATION LOG: Participant ID - 1
 User: No Input - Start of the conversation
 Pepper: Hello, my name is Pepper! I was developed by a French and Japanese robotic company, and I’m one of the most widely used social robots. 
@@ -7,4 +6,31 @@ Pepper: Hello, my name is Pepper! I was developed by a French and Japanese robot
                     Would you like to hear more about me, or should I tell you more about the game?
                         Option 1: robot
                         Option 2: game 
+--------------------------------------------------
+INTRODUCTION NON AI CONVERSATION LOG: Participant ID - 1
+User: San Juan robots
+Pepper: Okay! I’m a social robot, made by a company called SoftBank Robotics. 
+                    I can move my arms, show expressions with my eyes, and talk using a speaker in my chest. 
+                    I don’t actually think though, I follow a script like a play. 
+                    Would you like to know how I was programmed, or should I tell you about the game now? 
+                        Option 1: programme
+                        Option 2: game
+--------------------------------------------------
+INTRODUCTION NON AI CONVERSATION LOG: Participant ID - 1
+User: option 2 game
+Pepper: Great! In this game, we’ll play a game called “the investment game”. 
+                    You’ll start each round with 10 experimental dollars. 
+                    You can give some, all, or none of those dollars to me. 
+                    If you give me any dollars, the amount you invest will be tripled. 
+                    I’ll then decide how many dollars to return to you. I can return none, some, or all. 
+                    The goal for both of us is to make as much money as possible.
+--------------------------------------------------
+INTRODUCTION NON AI CONVERSATION LOG: Participant ID - 1
+User: option 2 game
+Pepper: Great! In this game, we’ll play a game called “the investment game”. 
+                    You’ll start each round with 10 experimental dollars. 
+                    You can give some, all, or none of those dollars to me. 
+                    If you give me any dollars, the amount you invest will be tripled. 
+                    I’ll then decide how many dollars to return to you. I can return none, some, or all. 
+                    The goal for both of us is to make as much money as possible.
 --------------------------------------------------

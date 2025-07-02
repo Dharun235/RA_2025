@@ -8,6 +8,8 @@ round_num = 0
 invested = 0
 returned = 0
 bank_money = 0
+PYTHON2_PATH = r"pepper\python.exe"  # Path to the Python executable
+
 
 def extract_game_info_from_end(csv_path):
     stop_row = ['Person ID', 'Round', 'Investment', 'Returned',
@@ -26,17 +28,16 @@ def extract_game_info_from_end(csv_path):
 
         if len(cleaned) >= 7:
             try:
-                # Extract required fields from the row
                 person_id = int(cleaned[0])
                 round_num = int(cleaned[1])
                 invested = float(cleaned[2])
                 returned = float(cleaned[3])
-                bank_money = float(cleaned[6])
-                return round_num, invested, returned, bank_money
+                bank_money = float(cleaned[6])  # corrected index
+                return person_id, round_num, invested, returned, bank_money
             except ValueError:
                 continue  # Skip rows with invalid data
 
-    return None, None, None, None  # In case no valid row is found
+    return None, None, None, None, None  # Always return 5 values
 
 def log_conversation(user_message, pepper_response, log_file=r"data/conversation_log_game.txt"):
     global gpt_powered, person_id, round_num
@@ -57,7 +58,7 @@ MAX_SILENT_ATTEMPTS = 10
 gpt_powered = sys.argv[1]  
 
 # Start the Pepper robot reactions script
-subprocess.run([r"python2", r"pepper/InvestmentGameReactions.py", f"start"])
+subprocess.run([PYTHON2_PATH, r"pepper/InvestmentGameReactions.py", f"start"])
     
 def main():
     global SYSTEM_PROMPT, INTERRUPT_PROMPT, person_id, gpt_powered, round_num, invested, returned, bank_money
@@ -77,7 +78,7 @@ def main():
     while True:
 
         # Game data extraction
-        round_num, invested, returned, bank = extract_game_info_from_end(r"data\game_data.csv")
+        person_id, round_num, invested, returned, bank = extract_game_info_from_end(r"data\game_data.csv")
 
         if gpt_powered == "yes":
 

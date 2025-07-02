@@ -5,8 +5,9 @@ from gpt.gpt_interface import get_user_message, speak_locally, generate_response
 INTERRUPT_PROMPT = "Hey, are you still there? Do you want to continue our conversation."
 MAX_SILENT_ATTEMPTS = 10
 PERSON_ID = sys.argv[1]
+PYTHON2_PATH = r"pepper\python.exe"  # Path to the Python executable
 
-subprocess.run([r"python2", r"pepper/InvestmentGameReactions.py", f"start"])
+subprocess.run([PYTHON2_PATH, r"pepper/InvestmentGameReactions.py", f"start"])
     
 # Dialogues for Pepper robot
 pepper_dialogues = {"Intro": """Hello, my name is Pepper! I was developed by a French and Japanese robotic company, and I’m one of the most widely used social robots. 

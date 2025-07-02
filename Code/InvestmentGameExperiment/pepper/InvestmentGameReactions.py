@@ -29,7 +29,7 @@ class InvestmentGameReactions:
         self.motion = ALProxy("ALMotion", robot_ip, port)
         self.leds = ALProxy("ALLeds", robot_ip, port) 
         self.behavior_manager = ALProxy("ALBehaviorManager", robot_ip, port)
-        self.autonomous_life = ALProxy("ALAutonomousLife", robot_ip, port)
+        #self.autonomous_life = ALProxy("ALAutonomousLife", robot_ip, port)
         self.posture = ALProxy("ALRobotPosture", robot_ip, port)
         self.reset_state()
 

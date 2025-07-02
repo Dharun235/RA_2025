@@ -1,7 +1,84 @@
---------------------------------------------------
-GAME - NON AI CONVERSATION LOG: Participant ID - 1
+GAME - NON AI CONVERSATION LOG: Participant ID - 0, Round number - 0
 User: No Input - Start of the conversation
 Pepper: Hello, my name is Pepper! I was developed by a French and Japanese robotic company, and I’m one of the most widely used social robots. 
     I was built to interact with humans in simple ways, and my conversational skills are still limited. 
     Today, we will play a so-called “investment game” together. Would you like to hear more about me, or should I tell you more about the game?
+--------------------------------------------------
+GAME - NON AI CONVERSATION LOG: Participant ID - 0, Round number - 0
+User: No Input - Start of the conversation
+Pepper: Hello, my name is Pepper! I was developed by a French and Japanese robotic company, and I’m one of the most widely used social robots. 
+    I was built to interact with humans in simple ways, and my conversational skills are still limited. 
+    Today, we will play a so-called “investment game” together. Would you like to hear more about me, or should I tell you more about the game?
+--------------------------------------------------
+GAME - NON AI CONVERSATION LOG: Participant ID - 3, Round number - 3
+User: what is your name
+Pepper: i'm pepper! a friendly humanoid robot built by softbank robotics. i'm here to chat, have fun, and play a cool investment game with you! shall we start playing?
+--------------------------------------------------
+GAME - NON AI CONVERSATION LOG: Participant ID - 0, Round number - 0
+User: No Input - Start of the conversation
+Pepper: Hello, my name is Pepper! I was developed by a French and Japanese robotic company, and I’m one of the most widely used social robots. 
+    I was built to interact with humans in simple ways, and my conversational skills are still limited. 
+    Today, we will play a so-called “investment game” together. Would you like to hear more about me, or should I tell you more about the game?
+--------------------------------------------------
+GAME - NON AI CONVERSATION LOG: Participant ID - 0, Round number - 0
+User: No Input - Start of the conversation
+Pepper: Hello, my name is Pepper! I was developed by a French and Japanese robotic company, and I’m one of the most widely used social robots. 
+    I was built to interact with humans in simple ways, and my conversational skills are still limited. 
+    Today, we will play a so-called “investment game” together. Would you like to hear more about me, or should I tell you more about the game?
+--------------------------------------------------
+GAME - NON AI CONVERSATION LOG: Participant ID - 0, Round number - 0
+User: No Input - Start of the conversation
+Pepper: Hello, my name is Pepper! I was developed by a French and Japanese robotic company, and I’m one of the most widely used social robots. 
+    I was built to interact with humans in simple ways, and my conversational skills are still limited. 
+    Today, we will play a so-called “investment game” together. Would you like to hear more about me, or should I tell you more about the game?
+--------------------------------------------------
+GAME - NON AI CONVERSATION LOG: Participant ID - 2, Round number - 1
+User: about the game
+Pepper: the investment game is a fun way to explore trust and decision-making! you invest dollars, i return some, and we see how well you play. it’s all about strategy and trust! are you ready to play?
+--------------------------------------------------
+GAME - NON AI CONVERSATION LOG: Participant ID - 2, Round number - 1
+User: call Ben
+Pepper: i'm not programmed to answer non-game related questions at this moment. are you ready to start the investment game? you'll start with 10 experimental dollars each round!
+--------------------------------------------------
+GAME - NON AI CONVERSATION LOG: Participant ID - 2, Round number - 1
+User: Hi how are you
+Pepper: i'm doing great, ready to play the investment game and have some fun! how are you feeling today? are you ready to make some clever investments?
+--------------------------------------------------
+GAME - NON AI CONVERSATION LOG: Participant ID - 2, Round number - 1
+User: Hillsong
+Pepper: i’m not programmed to answer non-game related questions at this moment. but hey, have you thought about how you might play the investment game?
+--------------------------------------------------
+GAME - NON AI CONVERSATION LOG: Participant ID - 2, Round number - 1
+User: Are there games on my little
+Pepper: sorry, i can’t answer this question. how about we focus on the investment game? it's a lot of fun!
+--------------------------------------------------
+GAME - NON AI CONVERSATION LOG: Participant ID - 2, Round number - 1
+User: solitaire games online
+Pepper: i'm not programmed to answer non-game related questions at this moment, but maybe after our investment game, we can chat about games! are you ready to start our first round? you start with 10 experimental dollars!
+--------------------------------------------------
+GAME - NON AI CONVERSATION LOG: Participant ID - 2, Round number - 1
+User: call CSK to Captain
+Pepper: sorry, i can't answer this question.
+--------------------------------------------------
+GAME - NON AI CONVERSATION LOG: Participant ID - 2, Round number - 1
+User: non-emergency number GameStop
+Pepper: sorry, i can’t answer this question. let’s keep playing. how about we focus on the investment game for now?
+--------------------------------------------------
+GAME - NON AI CONVERSATION LOG: Participant ID - 2, Round number - 1
+User: Orlando Craigslist
+Pepper: i'm not programmed to answer non-game related questions at this moment, but you know what's even more fun than browsing craigslist? playing the investment game with me!
+--------------------------------------------------
+GAME - NON AI CONVERSATION LOG: Participant ID - 0, Round number - 0
+User: No Input - Start of the conversation
+Pepper: Hello, my name is Pepper! I was developed by a French and Japanese robotic company, and I’m one of the most widely used social robots. 
+    I was built to interact with humans in simple ways, and my conversational skills are still limited. 
+    Today, we will play a so-called “investment game” together. Would you like to hear more about me, or should I tell you more about the game?
+--------------------------------------------------
+GAME - NON AI CONVERSATION LOG: Participant ID - 2, Round number - 1
+User: tell me about space
+Pepper: space is so vast and mysterious, don't you think? it makes you wonder what's out there! by the way, are you ready for the next round of the investment game?
+--------------------------------------------------
+GAME - NON AI CONVERSATION LOG: Participant ID - 9, Round number - 1
+User: No input detected
+Pepper: Hey, are you still there? Do you want to continue our conversation.
 --------------------------------------------------
