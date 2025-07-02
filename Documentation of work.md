@@ -460,3 +460,11 @@ if you use the motion timeline, you can create new movements (you can have each 
 - requriements file updated with missing libraries to install
 - Tomorrow test the game setup and install in both Ilaria and UK prof pc to work properly.
 ---
+
+# **02/07/2025**  
+- Worked from 13-17.
+- Updated all the files and README.
+- Setup didnt work properly with ubuntu in Ilaria pc.
+- Vacation till August 1st week.
+- Code will be debugged by Ilaria and Marta during the vacation and the experiment will start from August 2nd week.
+---
