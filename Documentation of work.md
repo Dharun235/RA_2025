@@ -467,4 +467,5 @@ if you use the motion timeline, you can create new movements (you can have each 
 - Setup didnt work properly with ubuntu in Ilaria pc.
 - Vacation till August 1st week.
 - Code will be debugged by Ilaria and Marta during the vacation and the experiment will start from August 2nd week.
+- Sample videos sent to Ilaria for reference of how game works.
 ---
