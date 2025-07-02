@@ -64,12 +64,12 @@ class InvestmentGameReactions:
         except Exception as e:
             print "[Reset] LED reset failed: {}".format(str(e))
 
-        try:
-            desired_state = "solitary" # or "interactive" or "disabled" or "safeguard" or "solitary"
-            if self.autonomous_life.getState() != desired_state:
-               self.autonomous_life.setState(desired_state)
-        except RuntimeError as e:
-            print "[Start] Autonomous Life state error: {}".format(str(e))
+        #try:
+        #    desired_state = "solitary" # or "interactive" or "disabled" or "safeguard" or "solitary"
+        #    if self.autonomous_life.getState() != desired_state:
+        #       self.autonomous_life.setState(desired_state)
+        #except RuntimeError as e:
+        #    print "[Start] Autonomous Life state error: {}".format(str(e))
 
 
     def start_game_reaction(self):

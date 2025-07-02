@@ -5,3 +5,4 @@ SpeechRecognition
 google
 waitress
 pyttsx3
+pyaudio
