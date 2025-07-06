@@ -11,7 +11,7 @@ import subprocess
 import pyttsx3
 
 # Client initialization for Google GenAI
-client = genai.Client(api_key="AIzaSyC3NHq1XSTbgtEcxo4w4in-toMicl4asig") # Replace with your actual API key
+client = genai.Client(api_key="") # Replace with your actual API key
 
 def speak_locally(text):
     """Speaks the given text using the system speaker in a female, casual-sounding voice."""
