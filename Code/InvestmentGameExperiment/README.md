@@ -48,7 +48,7 @@ pip3 install -r requirements_py3.txt
 In line 13 of gpt/gpt_interface.py, replace:
 
 ```bash
-client = genai.Client(api_key="AIzaSyC3NHq1XSTbgtEcxo4w4in-toMicl4asig") # Replace with your actual API key
+client = genai.Client(api_key="") # Replace with your actual API key
 ```
 
 #### Update Pepper IP
