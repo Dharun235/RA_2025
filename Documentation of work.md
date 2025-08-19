@@ -468,6 +468,7 @@ if you use the motion timeline, you can create new movements (you can have each 
 - Vacation till August 1st week.
 - Code will be debugged by Ilaria and Marta during the vacation and the experiment will start from August 2nd week.
 - Sample videos sent to Ilaria for reference of how game works.
+- Next week have to compensate for previous weeks.
 ---
 
 # **19/08/2025**  
