@@ -469,3 +469,8 @@ if you use the motion timeline, you can create new movements (you can have each 
 - Code will be debugged by Ilaria and Marta during the vacation and the experiment will start from August 2nd week.
 - Sample videos sent to Ilaria for reference of how game works.
 ---
+
+# **19/08/2025**  
+- Worked from 9-15.
+- Web scraping of all the pepper related documents is on procress and have to upload in outlook folder shared by Ilaria and to be continued on friday.
+---
