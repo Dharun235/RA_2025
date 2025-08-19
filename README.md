@@ -10,6 +10,7 @@
 - [Track of hours worked](https://docs.google.com/spreadsheets/d/1C0Kd1SOetn8jI25BcTjdE50et2n8ZGj_UXqiCZhcxL4/edit?gid=0#gid=0)
 - [Pepper robot booking](https://docs.google.com/spreadsheets/d/1N_mJlI-YBO1-8UJsnpvt48a4VzqEP6bdJLyYPYXrZVU/edit)
 - [Tasks](https://docs.google.com/spreadsheets/d/1iAmgyB54EfzorfaWhEhtZNnE2RbHTxVGqv-ixY5Jg40/edit?usp=sharing)
+- [Pepper robot archive](https://chalmers-my.sharepoint.com/:f:/r/personal/ilariat_chalmers_se/Documents/IxD%20robots%20guide?e=5%3a074afdeae009472a9a6f58af3459b654&web=1&openShare=true&fromShare=true&at=9)
 - [Preliminary experiment schedule of Antonia](https://docs.google.com/spreadsheets/d/1xxb8_htq1g0EKBKPfeSJZxhSms6MoT1nGaKy687xPOw/edit?usp=sharing)
 - [User studies notes](https://docs.google.com/document/d/1u4J00ZOp-1Bnrn4SprBmguAD2y97hp43bitf8vcM1OU/edit?tab=t.0)
 - [Pepper Documentation](http://doc.aldebaran.com/2-4/home_pepper.html)
