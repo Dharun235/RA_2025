@@ -474,4 +474,8 @@ if you use the motion timeline, you can create new movements (you can have each 
 # **19/08/2025**  
 - Worked from 9-15.
 - Web scraping of all the pepper related documents is on procress and have to upload in outlook folder shared by Ilaria and to be continued on friday.
+
+# **22/08/2025**  
+- Worked from 9-12.
+- Web scraping of all the pepper related documents is on procress and have to upload in outlook folder shared by Ilaria. Have to update few more websites.
 ---
