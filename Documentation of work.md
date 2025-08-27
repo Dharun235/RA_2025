@@ -478,4 +478,10 @@ if you use the motion timeline, you can create new movements (you can have each 
 # **22/08/2025**  
 - Worked from 9-12.
 - Web scraping of all the pepper related documents is on procress and have to upload in outlook folder shared by Ilaria. Have to update few more websites.
+- 
+# **27/08/2025**  
+- Worked from 9-17.
+- Web scraping of all the pepper related documents is done, and the file is uploaded with detailed readme, html files, softwares, and basic knowledge text.
+- Updated the documentation of usage of mohammad website in github and sent to him for future use.
+- Tomorrow to work on docker app and its use with pepper robot.
 ---
