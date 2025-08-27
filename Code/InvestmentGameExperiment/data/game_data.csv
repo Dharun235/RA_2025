@@ -4,3 +4,5 @@ Person ID,Round,Investment,Returned,Classification,Person Money,Bank Money,GPT P
 3,3,4,7,Trustful,10,35,not
 2,1,4,7,Trustful,10,13,not
 9,1,9,13,Trustful,10,14,not
+6,1,2,2,Trustful,10,10,not
+6,2,5,8,Trustful,10,23,not

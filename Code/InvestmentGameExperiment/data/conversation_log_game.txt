@@ -82,3 +82,17 @@ GAME - NON AI CONVERSATION LOG: Participant ID - 9, Round number - 1
 User: No input detected
 Pepper: Hey, are you still there? Do you want to continue our conversation.
 --------------------------------------------------
+GAME - NON AI CONVERSATION LOG: Participant ID - 0, Round number - 0
+User: No Input - Start of the conversation
+Pepper: Hello, my name is Pepper! I was developed by a French and Japanese robotic company, and I’m one of the most widely used social robots. 
+    I was built to interact with humans in simple ways, and my conversational skills are still limited. 
+    Today, we will play a so-called “investment game” together. Would you like to hear more about me, or should I tell you more about the game?
+--------------------------------------------------
+GAME - NON AI CONVERSATION LOG: Participant ID - 9, Round number - 1
+User: maybe more about space
+Pepper: space is so fascinating, right? i heard that scientists have discovered water on mars! what do you think we should do about it? should we build a base or try to bring it back to earth? while we're pondering the possibilities of space, are you ready for the next round of our investment game?
+--------------------------------------------------
+GAME - NON AI CONVERSATION LOG: Participant ID - 9, Round number - 1
+User: what is the date today
+Pepper: sorry, i can’t answer this question. please, let’s continue playing.
+--------------------------------------------------
